@@ -1,0 +1,12 @@
+[project]
+name = "gestureguard-hmi"
+version = "0.1.0"
+description = "Intent-aware touchless control of deterministic simulated workstations"
+requires-python = ">=3.11,<3.13"
+
+[tool.pytest.ini_options]
+pythonpath = ["backend"]
+testpaths = ["backend/tests"]
+
+[tool.ruff]
+line-length = 110

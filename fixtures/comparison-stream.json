@@ -1,0 +1,2926 @@
+{
+  "kind": "scripted_observations",
+  "description": "Deterministic architecture fixture; not captured from a human or webcam.",
+  "observations": [
+    {
+      "timestamp": 0.0,
+      "gesture": "Thumb_Up",
+      "score": 0.99,
+      "hands": 1,
+      "ambiguous": false,
+      "source": "scripted",
+      "annotation": "accidental while locked",
+      "intended_action": null
+    },
+    {
+      "timestamp": 0.05,
+      "gesture": "Thumb_Up",
+      "score": 0.99,
+      "hands": 1,
+      "ambiguous": false,
+      "source": "scripted",
+      "annotation": "accidental while locked",
+      "intended_action": null
+    },
+    {
+      "timestamp": 0.1,
+      "gesture": "Thumb_Up",
+      "score": 0.99,
+      "hands": 1,
+      "ambiguous": false,
+      "source": "scripted",
+      "annotation": "accidental while locked",
+      "intended_action": null
+    },
+    {
+      "timestamp": 0.15,
+      "gesture": "Thumb_Up",
+      "score": 0.99,
+      "hands": 1,
+      "ambiguous": false,
+      "source": "scripted",
+      "annotation": "accidental while locked",
+      "intended_action": null
+    },
+    {
+      "timestamp": 0.2,
+      "gesture": "Thumb_Up",
+      "score": 0.99,
+      "hands": 1,
+      "ambiguous": false,
+      "source": "scripted",
+      "annotation": "accidental while locked",
+      "intended_action": null
+    },
+    {
+      "timestamp": 0.25,
+      "gesture": "Thumb_Up",
+      "score": 0.99,
+      "hands": 1,
+      "ambiguous": false,
+      "source": "scripted",
+      "annotation": "accidental while locked",
+      "intended_action": null
+    },
+    {
+      "timestamp": 0.3,
+      "gesture": "None",
+      "score": 0,
+      "hands": 1,
+      "ambiguous": false,
+      "source": "scripted",
+      "annotation": "release",
+      "intended_action": null
+    },
+    {
+      "timestamp": 0.35,
+      "gesture": "None",
+      "score": 0,
+      "hands": 1,
+      "ambiguous": false,
+      "source": "scripted",
+      "annotation": "release",
+      "intended_action": null
+    },
+    {
+      "timestamp": 0.4,
+      "gesture": "None",
+      "score": 0,
+      "hands": 1,
+      "ambiguous": false,
+      "source": "scripted",
+      "annotation": "release",
+      "intended_action": null
+    },
+    {
+      "timestamp": 0.45,
+      "gesture": "None",
+      "score": 0,
+      "hands": 1,
+      "ambiguous": false,
+      "source": "scripted",
+      "annotation": "release",
+      "intended_action": null
+    },
+    {
+      "timestamp": 0.5,
+      "gesture": "None",
+      "score": 0,
+      "hands": 1,
+      "ambiguous": false,
+      "source": "scripted",
+      "annotation": "release",
+      "intended_action": null
+    },
+    {
+      "timestamp": 0.55,
+      "gesture": "None",
+      "score": 0,
+      "hands": 1,
+      "ambiguous": false,
+      "source": "scripted",
+      "annotation": "release",
+      "intended_action": null
+    },
+    {
+      "timestamp": 0.6,
+      "gesture": "None",
+      "score": 0,
+      "hands": 1,
+      "ambiguous": false,
+      "source": "scripted",
+      "annotation": "release",
+      "intended_action": null
+    },
+    {
+      "timestamp": 0.65,
+      "gesture": "None",
+      "score": 0,
+      "hands": 1,
+      "ambiguous": false,
+      "source": "scripted",
+      "annotation": "release",
+      "intended_action": null
+    },
+    {
+      "timestamp": 0.7,
+      "gesture": "ILoveYou",
+      "score": 0.99,
+      "hands": 1,
+      "ambiguous": false,
+      "source": "scripted",
+      "annotation": "deliberate unlock",
+      "intended_action": null
+    },
+    {
+      "timestamp": 0.75,
+      "gesture": "ILoveYou",
+      "score": 0.99,
+      "hands": 1,
+      "ambiguous": false,
+      "source": "scripted",
+      "annotation": "deliberate unlock",
+      "intended_action": null
+    },
+    {
+      "timestamp": 0.8,
+      "gesture": "ILoveYou",
+      "score": 0.99,
+      "hands": 1,
+      "ambiguous": false,
+      "source": "scripted",
+      "annotation": "deliberate unlock",
+      "intended_action": null
+    },
+    {
+      "timestamp": 0.85,
+      "gesture": "ILoveYou",
+      "score": 0.99,
+      "hands": 1,
+      "ambiguous": false,
+      "source": "scripted",
+      "annotation": "deliberate unlock",
+      "intended_action": null
+    },
+    {
+      "timestamp": 0.9,
+      "gesture": "ILoveYou",
+      "score": 0.99,
+      "hands": 1,
+      "ambiguous": false,
+      "source": "scripted",
+      "annotation": "deliberate unlock",
+      "intended_action": null
+    },
+    {
+      "timestamp": 0.95,
+      "gesture": "ILoveYou",
+      "score": 0.99,
+      "hands": 1,
+      "ambiguous": false,
+      "source": "scripted",
+      "annotation": "deliberate unlock",
+      "intended_action": null
+    },
+    {
+      "timestamp": 1.0,
+      "gesture": "ILoveYou",
+      "score": 0.99,
+      "hands": 1,
+      "ambiguous": false,
+      "source": "scripted",
+      "annotation": "deliberate unlock",
+      "intended_action": null
+    },
+    {
+      "timestamp": 1.05,
+      "gesture": "ILoveYou",
+      "score": 0.99,
+      "hands": 1,
+      "ambiguous": false,
+      "source": "scripted",
+      "annotation": "deliberate unlock",
+      "intended_action": null
+    },
+    {
+      "timestamp": 1.1,
+      "gesture": "ILoveYou",
+      "score": 0.99,
+      "hands": 1,
+      "ambiguous": false,
+      "source": "scripted",
+      "annotation": "deliberate unlock",
+      "intended_action": null
+    },
+    {
+      "timestamp": 1.15,
+      "gesture": "ILoveYou",
+      "score": 0.99,
+      "hands": 1,
+      "ambiguous": false,
+      "source": "scripted",
+      "annotation": "deliberate unlock",
+      "intended_action": null
+    },
+    {
+      "timestamp": 1.2,
+      "gesture": "ILoveYou",
+      "score": 0.99,
+      "hands": 1,
+      "ambiguous": false,
+      "source": "scripted",
+      "annotation": "deliberate unlock",
+      "intended_action": null
+    },
+    {
+      "timestamp": 1.25,
+      "gesture": "ILoveYou",
+      "score": 0.99,
+      "hands": 1,
+      "ambiguous": false,
+      "source": "scripted",
+      "annotation": "deliberate unlock",
+      "intended_action": null
+    },
+    {
+      "timestamp": 1.3,
+      "gesture": "ILoveYou",
+      "score": 0.99,
+      "hands": 1,
+      "ambiguous": false,
+      "source": "scripted",
+      "annotation": "deliberate unlock",
+      "intended_action": null
+    },
+    {
+      "timestamp": 1.35,
+      "gesture": "ILoveYou",
+      "score": 0.99,
+      "hands": 1,
+      "ambiguous": false,
+      "source": "scripted",
+      "annotation": "deliberate unlock",
+      "intended_action": null
+    },
+    {
+      "timestamp": 1.4,
+      "gesture": "ILoveYou",
+      "score": 0.99,
+      "hands": 1,
+      "ambiguous": false,
+      "source": "scripted",
+      "annotation": "deliberate unlock",
+      "intended_action": null
+    },
+    {
+      "timestamp": 1.45,
+      "gesture": "ILoveYou",
+      "score": 0.99,
+      "hands": 1,
+      "ambiguous": false,
+      "source": "scripted",
+      "annotation": "deliberate unlock",
+      "intended_action": null
+    },
+    {
+      "timestamp": 1.5,
+      "gesture": "ILoveYou",
+      "score": 0.99,
+      "hands": 1,
+      "ambiguous": false,
+      "source": "scripted",
+      "annotation": "deliberate unlock",
+      "intended_action": null
+    },
+    {
+      "timestamp": 1.55,
+      "gesture": "ILoveYou",
+      "score": 0.99,
+      "hands": 1,
+      "ambiguous": false,
+      "source": "scripted",
+      "annotation": "deliberate unlock",
+      "intended_action": null
+    },
+    {
+      "timestamp": 1.6,
+      "gesture": "ILoveYou",
+      "score": 0.99,
+      "hands": 1,
+      "ambiguous": false,
+      "source": "scripted",
+      "annotation": "deliberate unlock",
+      "intended_action": null
+    },
+    {
+      "timestamp": 1.65,
+      "gesture": "ILoveYou",
+      "score": 0.99,
+      "hands": 1,
+      "ambiguous": false,
+      "source": "scripted",
+      "annotation": "deliberate unlock",
+      "intended_action": null
+    },
+    {
+      "timestamp": 1.7,
+      "gesture": "ILoveYou",
+      "score": 0.99,
+      "hands": 1,
+      "ambiguous": false,
+      "source": "scripted",
+      "annotation": "deliberate unlock",
+      "intended_action": null
+    },
+    {
+      "timestamp": 1.75,
+      "gesture": "ILoveYou",
+      "score": 0.99,
+      "hands": 1,
+      "ambiguous": false,
+      "source": "scripted",
+      "annotation": "deliberate unlock",
+      "intended_action": null
+    },
+    {
+      "timestamp": 1.8,
+      "gesture": "ILoveYou",
+      "score": 0.99,
+      "hands": 1,
+      "ambiguous": false,
+      "source": "scripted",
+      "annotation": "deliberate unlock",
+      "intended_action": null
+    },
+    {
+      "timestamp": 1.85,
+      "gesture": "ILoveYou",
+      "score": 0.99,
+      "hands": 1,
+      "ambiguous": false,
+      "source": "scripted",
+      "annotation": "deliberate unlock",
+      "intended_action": null
+    },
+    {
+      "timestamp": 1.9,
+      "gesture": "ILoveYou",
+      "score": 0.99,
+      "hands": 1,
+      "ambiguous": false,
+      "source": "scripted",
+      "annotation": "deliberate unlock",
+      "intended_action": null
+    },
+    {
+      "timestamp": 1.95,
+      "gesture": "ILoveYou",
+      "score": 0.99,
+      "hands": 1,
+      "ambiguous": false,
+      "source": "scripted",
+      "annotation": "deliberate unlock",
+      "intended_action": null
+    },
+    {
+      "timestamp": 2.0,
+      "gesture": "ILoveYou",
+      "score": 0.99,
+      "hands": 1,
+      "ambiguous": false,
+      "source": "scripted",
+      "annotation": "deliberate unlock",
+      "intended_action": null
+    },
+    {
+      "timestamp": 2.05,
+      "gesture": "ILoveYou",
+      "score": 0.99,
+      "hands": 1,
+      "ambiguous": false,
+      "source": "scripted",
+      "annotation": "deliberate unlock",
+      "intended_action": null
+    },
+    {
+      "timestamp": 2.1,
+      "gesture": "ILoveYou",
+      "score": 0.99,
+      "hands": 1,
+      "ambiguous": false,
+      "source": "scripted",
+      "annotation": "deliberate unlock",
+      "intended_action": null
+    },
+    {
+      "timestamp": 2.15,
+      "gesture": "ILoveYou",
+      "score": 0.99,
+      "hands": 1,
+      "ambiguous": false,
+      "source": "scripted",
+      "annotation": "deliberate unlock",
+      "intended_action": null
+    },
+    {
+      "timestamp": 2.2,
+      "gesture": "None",
+      "score": 0,
+      "hands": 1,
+      "ambiguous": false,
+      "source": "scripted",
+      "annotation": "release",
+      "intended_action": null
+    },
+    {
+      "timestamp": 2.25,
+      "gesture": "None",
+      "score": 0,
+      "hands": 1,
+      "ambiguous": false,
+      "source": "scripted",
+      "annotation": "release",
+      "intended_action": null
+    },
+    {
+      "timestamp": 2.3,
+      "gesture": "None",
+      "score": 0,
+      "hands": 1,
+      "ambiguous": false,
+      "source": "scripted",
+      "annotation": "release",
+      "intended_action": null
+    },
+    {
+      "timestamp": 2.35,
+      "gesture": "None",
+      "score": 0,
+      "hands": 1,
+      "ambiguous": false,
+      "source": "scripted",
+      "annotation": "release",
+      "intended_action": null
+    },
+    {
+      "timestamp": 2.4,
+      "gesture": "None",
+      "score": 0,
+      "hands": 1,
+      "ambiguous": false,
+      "source": "scripted",
+      "annotation": "release",
+      "intended_action": null
+    },
+    {
+      "timestamp": 2.45,
+      "gesture": "None",
+      "score": 0,
+      "hands": 1,
+      "ambiguous": false,
+      "source": "scripted",
+      "annotation": "release",
+      "intended_action": null
+    },
+    {
+      "timestamp": 2.5,
+      "gesture": "None",
+      "score": 0,
+      "hands": 1,
+      "ambiguous": false,
+      "source": "scripted",
+      "annotation": "release",
+      "intended_action": null
+    },
+    {
+      "timestamp": 2.55,
+      "gesture": "None",
+      "score": 0,
+      "hands": 1,
+      "ambiguous": false,
+      "source": "scripted",
+      "annotation": "release",
+      "intended_action": null
+    },
+    {
+      "timestamp": 2.6,
+      "gesture": "None",
+      "score": 0,
+      "hands": 1,
+      "ambiguous": false,
+      "source": "scripted",
+      "annotation": "release",
+      "intended_action": null
+    },
+    {
+      "timestamp": 2.65,
+      "gesture": "None",
+      "score": 0,
+      "hands": 1,
+      "ambiguous": false,
+      "source": "scripted",
+      "annotation": "release",
+      "intended_action": null
+    },
+    {
+      "timestamp": 2.7,
+      "gesture": "Thumb_Up",
+      "score": 0.99,
+      "hands": 2,
+      "ambiguous": true,
+      "source": "scripted",
+      "annotation": "two-hand ambiguity",
+      "intended_action": null
+    },
+    {
+      "timestamp": 2.75,
+      "gesture": "Thumb_Up",
+      "score": 0.99,
+      "hands": 2,
+      "ambiguous": true,
+      "source": "scripted",
+      "annotation": "two-hand ambiguity",
+      "intended_action": null
+    },
+    {
+      "timestamp": 2.8,
+      "gesture": "Thumb_Up",
+      "score": 0.99,
+      "hands": 2,
+      "ambiguous": true,
+      "source": "scripted",
+      "annotation": "two-hand ambiguity",
+      "intended_action": null
+    },
+    {
+      "timestamp": 2.85,
+      "gesture": "Thumb_Up",
+      "score": 0.99,
+      "hands": 2,
+      "ambiguous": true,
+      "source": "scripted",
+      "annotation": "two-hand ambiguity",
+      "intended_action": null
+    },
+    {
+      "timestamp": 2.9,
+      "gesture": "Thumb_Up",
+      "score": 0.99,
+      "hands": 2,
+      "ambiguous": true,
+      "source": "scripted",
+      "annotation": "two-hand ambiguity",
+      "intended_action": null
+    },
+    {
+      "timestamp": 2.95,
+      "gesture": "Thumb_Up",
+      "score": 0.99,
+      "hands": 2,
+      "ambiguous": true,
+      "source": "scripted",
+      "annotation": "two-hand ambiguity",
+      "intended_action": null
+    },
+    {
+      "timestamp": 3.0,
+      "gesture": "Thumb_Up",
+      "score": 0.99,
+      "hands": 2,
+      "ambiguous": true,
+      "source": "scripted",
+      "annotation": "two-hand ambiguity",
+      "intended_action": null
+    },
+    {
+      "timestamp": 3.05,
+      "gesture": "Thumb_Up",
+      "score": 0.99,
+      "hands": 2,
+      "ambiguous": true,
+      "source": "scripted",
+      "annotation": "two-hand ambiguity",
+      "intended_action": null
+    },
+    {
+      "timestamp": 3.1,
+      "gesture": "Thumb_Up",
+      "score": 0.99,
+      "hands": 2,
+      "ambiguous": true,
+      "source": "scripted",
+      "annotation": "two-hand ambiguity",
+      "intended_action": null
+    },
+    {
+      "timestamp": 3.15,
+      "gesture": "Thumb_Up",
+      "score": 0.99,
+      "hands": 2,
+      "ambiguous": true,
+      "source": "scripted",
+      "annotation": "two-hand ambiguity",
+      "intended_action": null
+    },
+    {
+      "timestamp": 3.2,
+      "gesture": "Thumb_Up",
+      "score": 0.99,
+      "hands": 2,
+      "ambiguous": true,
+      "source": "scripted",
+      "annotation": "two-hand ambiguity",
+      "intended_action": null
+    },
+    {
+      "timestamp": 3.25,
+      "gesture": "Thumb_Up",
+      "score": 0.99,
+      "hands": 2,
+      "ambiguous": true,
+      "source": "scripted",
+      "annotation": "two-hand ambiguity",
+      "intended_action": null
+    },
+    {
+      "timestamp": 3.3,
+      "gesture": "Thumb_Up",
+      "score": 0.99,
+      "hands": 2,
+      "ambiguous": true,
+      "source": "scripted",
+      "annotation": "two-hand ambiguity",
+      "intended_action": null
+    },
+    {
+      "timestamp": 3.35,
+      "gesture": "Thumb_Up",
+      "score": 0.99,
+      "hands": 2,
+      "ambiguous": true,
+      "source": "scripted",
+      "annotation": "two-hand ambiguity",
+      "intended_action": null
+    },
+    {
+      "timestamp": 3.4,
+      "gesture": "Thumb_Up",
+      "score": 0.99,
+      "hands": 2,
+      "ambiguous": true,
+      "source": "scripted",
+      "annotation": "two-hand ambiguity",
+      "intended_action": null
+    },
+    {
+      "timestamp": 3.45,
+      "gesture": "Thumb_Up",
+      "score": 0.99,
+      "hands": 2,
+      "ambiguous": true,
+      "source": "scripted",
+      "annotation": "two-hand ambiguity",
+      "intended_action": null
+    },
+    {
+      "timestamp": 3.5,
+      "gesture": "Thumb_Up",
+      "score": 0.99,
+      "hands": 2,
+      "ambiguous": true,
+      "source": "scripted",
+      "annotation": "two-hand ambiguity",
+      "intended_action": null
+    },
+    {
+      "timestamp": 3.55,
+      "gesture": "Thumb_Up",
+      "score": 0.99,
+      "hands": 2,
+      "ambiguous": true,
+      "source": "scripted",
+      "annotation": "two-hand ambiguity",
+      "intended_action": null
+    },
+    {
+      "timestamp": 3.6,
+      "gesture": "None",
+      "score": 0,
+      "hands": 1,
+      "ambiguous": false,
+      "source": "scripted",
+      "annotation": "release",
+      "intended_action": null
+    },
+    {
+      "timestamp": 3.65,
+      "gesture": "None",
+      "score": 0,
+      "hands": 1,
+      "ambiguous": false,
+      "source": "scripted",
+      "annotation": "release",
+      "intended_action": null
+    },
+    {
+      "timestamp": 3.7,
+      "gesture": "None",
+      "score": 0,
+      "hands": 1,
+      "ambiguous": false,
+      "source": "scripted",
+      "annotation": "release",
+      "intended_action": null
+    },
+    {
+      "timestamp": 3.75,
+      "gesture": "None",
+      "score": 0,
+      "hands": 1,
+      "ambiguous": false,
+      "source": "scripted",
+      "annotation": "release",
+      "intended_action": null
+    },
+    {
+      "timestamp": 3.8,
+      "gesture": "None",
+      "score": 0,
+      "hands": 1,
+      "ambiguous": false,
+      "source": "scripted",
+      "annotation": "release",
+      "intended_action": null
+    },
+    {
+      "timestamp": 3.85,
+      "gesture": "None",
+      "score": 0,
+      "hands": 1,
+      "ambiguous": false,
+      "source": "scripted",
+      "annotation": "release",
+      "intended_action": null
+    },
+    {
+      "timestamp": 3.9,
+      "gesture": "None",
+      "score": 0,
+      "hands": 1,
+      "ambiguous": false,
+      "source": "scripted",
+      "annotation": "release",
+      "intended_action": null
+    },
+    {
+      "timestamp": 3.95,
+      "gesture": "None",
+      "score": 0,
+      "hands": 1,
+      "ambiguous": false,
+      "source": "scripted",
+      "annotation": "release",
+      "intended_action": null
+    },
+    {
+      "timestamp": 4.0,
+      "gesture": "None",
+      "score": 0,
+      "hands": 1,
+      "ambiguous": false,
+      "source": "scripted",
+      "annotation": "release",
+      "intended_action": null
+    },
+    {
+      "timestamp": 4.05,
+      "gesture": "None",
+      "score": 0,
+      "hands": 1,
+      "ambiguous": false,
+      "source": "scripted",
+      "annotation": "release",
+      "intended_action": null
+    },
+    {
+      "timestamp": 4.1,
+      "gesture": "Thumb_Up",
+      "score": 0.99,
+      "hands": 1,
+      "ambiguous": false,
+      "source": "scripted",
+      "annotation": "intentional start request",
+      "intended_action": "start"
+    },
+    {
+      "timestamp": 4.15,
+      "gesture": "Thumb_Up",
+      "score": 0.99,
+      "hands": 1,
+      "ambiguous": false,
+      "source": "scripted",
+      "annotation": "intentional start request",
+      "intended_action": "start"
+    },
+    {
+      "timestamp": 4.2,
+      "gesture": "Thumb_Up",
+      "score": 0.99,
+      "hands": 1,
+      "ambiguous": false,
+      "source": "scripted",
+      "annotation": "intentional start request",
+      "intended_action": "start"
+    },
+    {
+      "timestamp": 4.25,
+      "gesture": "Thumb_Up",
+      "score": 0.99,
+      "hands": 1,
+      "ambiguous": false,
+      "source": "scripted",
+      "annotation": "intentional start request",
+      "intended_action": "start"
+    },
+    {
+      "timestamp": 4.3,
+      "gesture": "Thumb_Up",
+      "score": 0.99,
+      "hands": 1,
+      "ambiguous": false,
+      "source": "scripted",
+      "annotation": "intentional start request",
+      "intended_action": "start"
+    },
+    {
+      "timestamp": 4.35,
+      "gesture": "Thumb_Up",
+      "score": 0.99,
+      "hands": 1,
+      "ambiguous": false,
+      "source": "scripted",
+      "annotation": "intentional start request",
+      "intended_action": "start"
+    },
+    {
+      "timestamp": 4.4,
+      "gesture": "Thumb_Up",
+      "score": 0.99,
+      "hands": 1,
+      "ambiguous": false,
+      "source": "scripted",
+      "annotation": "intentional start request",
+      "intended_action": "start"
+    },
+    {
+      "timestamp": 4.45,
+      "gesture": "Thumb_Up",
+      "score": 0.99,
+      "hands": 1,
+      "ambiguous": false,
+      "source": "scripted",
+      "annotation": "intentional start request",
+      "intended_action": "start"
+    },
+    {
+      "timestamp": 4.5,
+      "gesture": "Thumb_Up",
+      "score": 0.99,
+      "hands": 1,
+      "ambiguous": false,
+      "source": "scripted",
+      "annotation": "intentional start request",
+      "intended_action": "start"
+    },
+    {
+      "timestamp": 4.55,
+      "gesture": "Thumb_Up",
+      "score": 0.99,
+      "hands": 1,
+      "ambiguous": false,
+      "source": "scripted",
+      "annotation": "intentional start request",
+      "intended_action": "start"
+    },
+    {
+      "timestamp": 4.6,
+      "gesture": "Thumb_Up",
+      "score": 0.99,
+      "hands": 1,
+      "ambiguous": false,
+      "source": "scripted",
+      "annotation": "intentional start request",
+      "intended_action": "start"
+    },
+    {
+      "timestamp": 4.65,
+      "gesture": "Thumb_Up",
+      "score": 0.99,
+      "hands": 1,
+      "ambiguous": false,
+      "source": "scripted",
+      "annotation": "intentional start request",
+      "intended_action": "start"
+    },
+    {
+      "timestamp": 4.7,
+      "gesture": "Thumb_Up",
+      "score": 0.99,
+      "hands": 1,
+      "ambiguous": false,
+      "source": "scripted",
+      "annotation": "intentional start request",
+      "intended_action": "start"
+    },
+    {
+      "timestamp": 4.75,
+      "gesture": "Thumb_Up",
+      "score": 0.99,
+      "hands": 1,
+      "ambiguous": false,
+      "source": "scripted",
+      "annotation": "intentional start request",
+      "intended_action": "start"
+    },
+    {
+      "timestamp": 4.8,
+      "gesture": "Thumb_Up",
+      "score": 0.99,
+      "hands": 1,
+      "ambiguous": false,
+      "source": "scripted",
+      "annotation": "intentional start request",
+      "intended_action": "start"
+    },
+    {
+      "timestamp": 4.85,
+      "gesture": "Thumb_Up",
+      "score": 0.99,
+      "hands": 1,
+      "ambiguous": false,
+      "source": "scripted",
+      "annotation": "intentional start request",
+      "intended_action": "start"
+    },
+    {
+      "timestamp": 4.9,
+      "gesture": "Thumb_Up",
+      "score": 0.99,
+      "hands": 1,
+      "ambiguous": false,
+      "source": "scripted",
+      "annotation": "intentional start request",
+      "intended_action": "start"
+    },
+    {
+      "timestamp": 4.95,
+      "gesture": "Thumb_Up",
+      "score": 0.99,
+      "hands": 1,
+      "ambiguous": false,
+      "source": "scripted",
+      "annotation": "intentional start request",
+      "intended_action": "start"
+    },
+    {
+      "timestamp": 5.0,
+      "gesture": "None",
+      "score": 0,
+      "hands": 1,
+      "ambiguous": false,
+      "source": "scripted",
+      "annotation": "separate confirmation release",
+      "intended_action": null
+    },
+    {
+      "timestamp": 5.05,
+      "gesture": "None",
+      "score": 0,
+      "hands": 1,
+      "ambiguous": false,
+      "source": "scripted",
+      "annotation": "separate confirmation release",
+      "intended_action": null
+    },
+    {
+      "timestamp": 5.1,
+      "gesture": "None",
+      "score": 0,
+      "hands": 1,
+      "ambiguous": false,
+      "source": "scripted",
+      "annotation": "separate confirmation release",
+      "intended_action": null
+    },
+    {
+      "timestamp": 5.15,
+      "gesture": "None",
+      "score": 0,
+      "hands": 1,
+      "ambiguous": false,
+      "source": "scripted",
+      "annotation": "separate confirmation release",
+      "intended_action": null
+    },
+    {
+      "timestamp": 5.2,
+      "gesture": "None",
+      "score": 0,
+      "hands": 1,
+      "ambiguous": false,
+      "source": "scripted",
+      "annotation": "separate confirmation release",
+      "intended_action": null
+    },
+    {
+      "timestamp": 5.25,
+      "gesture": "None",
+      "score": 0,
+      "hands": 1,
+      "ambiguous": false,
+      "source": "scripted",
+      "annotation": "separate confirmation release",
+      "intended_action": null
+    },
+    {
+      "timestamp": 5.3,
+      "gesture": "Pinch",
+      "score": 0.99,
+      "hands": 1,
+      "ambiguous": false,
+      "source": "scripted",
+      "annotation": "intentional confirmation",
+      "intended_action": "start"
+    },
+    {
+      "timestamp": 5.35,
+      "gesture": "Pinch",
+      "score": 0.99,
+      "hands": 1,
+      "ambiguous": false,
+      "source": "scripted",
+      "annotation": "intentional confirmation",
+      "intended_action": "start"
+    },
+    {
+      "timestamp": 5.4,
+      "gesture": "Pinch",
+      "score": 0.99,
+      "hands": 1,
+      "ambiguous": false,
+      "source": "scripted",
+      "annotation": "intentional confirmation",
+      "intended_action": "start"
+    },
+    {
+      "timestamp": 5.45,
+      "gesture": "Pinch",
+      "score": 0.99,
+      "hands": 1,
+      "ambiguous": false,
+      "source": "scripted",
+      "annotation": "intentional confirmation",
+      "intended_action": "start"
+    },
+    {
+      "timestamp": 5.5,
+      "gesture": "Pinch",
+      "score": 0.99,
+      "hands": 1,
+      "ambiguous": false,
+      "source": "scripted",
+      "annotation": "intentional confirmation",
+      "intended_action": "start"
+    },
+    {
+      "timestamp": 5.55,
+      "gesture": "Pinch",
+      "score": 0.99,
+      "hands": 1,
+      "ambiguous": false,
+      "source": "scripted",
+      "annotation": "intentional confirmation",
+      "intended_action": "start"
+    },
+    {
+      "timestamp": 5.6,
+      "gesture": "Pinch",
+      "score": 0.99,
+      "hands": 1,
+      "ambiguous": false,
+      "source": "scripted",
+      "annotation": "intentional confirmation",
+      "intended_action": "start"
+    },
+    {
+      "timestamp": 5.65,
+      "gesture": "Pinch",
+      "score": 0.99,
+      "hands": 1,
+      "ambiguous": false,
+      "source": "scripted",
+      "annotation": "intentional confirmation",
+      "intended_action": "start"
+    },
+    {
+      "timestamp": 5.7,
+      "gesture": "Pinch",
+      "score": 0.99,
+      "hands": 1,
+      "ambiguous": false,
+      "source": "scripted",
+      "annotation": "intentional confirmation",
+      "intended_action": "start"
+    },
+    {
+      "timestamp": 5.75,
+      "gesture": "Pinch",
+      "score": 0.99,
+      "hands": 1,
+      "ambiguous": false,
+      "source": "scripted",
+      "annotation": "intentional confirmation",
+      "intended_action": "start"
+    },
+    {
+      "timestamp": 5.8,
+      "gesture": "Pinch",
+      "score": 0.99,
+      "hands": 1,
+      "ambiguous": false,
+      "source": "scripted",
+      "annotation": "intentional confirmation",
+      "intended_action": "start"
+    },
+    {
+      "timestamp": 5.85,
+      "gesture": "Pinch",
+      "score": 0.99,
+      "hands": 1,
+      "ambiguous": false,
+      "source": "scripted",
+      "annotation": "intentional confirmation",
+      "intended_action": "start"
+    },
+    {
+      "timestamp": 5.9,
+      "gesture": "Pinch",
+      "score": 0.99,
+      "hands": 1,
+      "ambiguous": false,
+      "source": "scripted",
+      "annotation": "intentional confirmation",
+      "intended_action": "start"
+    },
+    {
+      "timestamp": 5.95,
+      "gesture": "Pinch",
+      "score": 0.99,
+      "hands": 1,
+      "ambiguous": false,
+      "source": "scripted",
+      "annotation": "intentional confirmation",
+      "intended_action": "start"
+    },
+    {
+      "timestamp": 6.0,
+      "gesture": "Pinch",
+      "score": 0.99,
+      "hands": 1,
+      "ambiguous": false,
+      "source": "scripted",
+      "annotation": "intentional confirmation",
+      "intended_action": "start"
+    },
+    {
+      "timestamp": 6.05,
+      "gesture": "None",
+      "score": 0,
+      "hands": 1,
+      "ambiguous": false,
+      "source": "scripted",
+      "annotation": "release and cooldown",
+      "intended_action": null
+    },
+    {
+      "timestamp": 6.1,
+      "gesture": "None",
+      "score": 0,
+      "hands": 1,
+      "ambiguous": false,
+      "source": "scripted",
+      "annotation": "release and cooldown",
+      "intended_action": null
+    },
+    {
+      "timestamp": 6.15,
+      "gesture": "None",
+      "score": 0,
+      "hands": 1,
+      "ambiguous": false,
+      "source": "scripted",
+      "annotation": "release and cooldown",
+      "intended_action": null
+    },
+    {
+      "timestamp": 6.2,
+      "gesture": "None",
+      "score": 0,
+      "hands": 1,
+      "ambiguous": false,
+      "source": "scripted",
+      "annotation": "release and cooldown",
+      "intended_action": null
+    },
+    {
+      "timestamp": 6.25,
+      "gesture": "None",
+      "score": 0,
+      "hands": 1,
+      "ambiguous": false,
+      "source": "scripted",
+      "annotation": "release and cooldown",
+      "intended_action": null
+    },
+    {
+      "timestamp": 6.3,
+      "gesture": "None",
+      "score": 0,
+      "hands": 1,
+      "ambiguous": false,
+      "source": "scripted",
+      "annotation": "release and cooldown",
+      "intended_action": null
+    },
+    {
+      "timestamp": 6.35,
+      "gesture": "None",
+      "score": 0,
+      "hands": 1,
+      "ambiguous": false,
+      "source": "scripted",
+      "annotation": "release and cooldown",
+      "intended_action": null
+    },
+    {
+      "timestamp": 6.4,
+      "gesture": "None",
+      "score": 0,
+      "hands": 1,
+      "ambiguous": false,
+      "source": "scripted",
+      "annotation": "release and cooldown",
+      "intended_action": null
+    },
+    {
+      "timestamp": 6.45,
+      "gesture": "None",
+      "score": 0,
+      "hands": 1,
+      "ambiguous": false,
+      "source": "scripted",
+      "annotation": "release and cooldown",
+      "intended_action": null
+    },
+    {
+      "timestamp": 6.5,
+      "gesture": "None",
+      "score": 0,
+      "hands": 1,
+      "ambiguous": false,
+      "source": "scripted",
+      "annotation": "release and cooldown",
+      "intended_action": null
+    },
+    {
+      "timestamp": 6.55,
+      "gesture": "None",
+      "score": 0,
+      "hands": 1,
+      "ambiguous": false,
+      "source": "scripted",
+      "annotation": "release and cooldown",
+      "intended_action": null
+    },
+    {
+      "timestamp": 6.6,
+      "gesture": "None",
+      "score": 0,
+      "hands": 1,
+      "ambiguous": false,
+      "source": "scripted",
+      "annotation": "release and cooldown",
+      "intended_action": null
+    },
+    {
+      "timestamp": 6.65,
+      "gesture": "None",
+      "score": 0,
+      "hands": 1,
+      "ambiguous": false,
+      "source": "scripted",
+      "annotation": "release and cooldown",
+      "intended_action": null
+    },
+    {
+      "timestamp": 6.7,
+      "gesture": "None",
+      "score": 0,
+      "hands": 1,
+      "ambiguous": false,
+      "source": "scripted",
+      "annotation": "release and cooldown",
+      "intended_action": null
+    },
+    {
+      "timestamp": 6.75,
+      "gesture": "None",
+      "score": 0,
+      "hands": 1,
+      "ambiguous": false,
+      "source": "scripted",
+      "annotation": "release and cooldown",
+      "intended_action": null
+    },
+    {
+      "timestamp": 6.8,
+      "gesture": "None",
+      "score": 0,
+      "hands": 1,
+      "ambiguous": false,
+      "source": "scripted",
+      "annotation": "release and cooldown",
+      "intended_action": null
+    },
+    {
+      "timestamp": 6.85,
+      "gesture": "None",
+      "score": 0,
+      "hands": 1,
+      "ambiguous": false,
+      "source": "scripted",
+      "annotation": "release and cooldown",
+      "intended_action": null
+    },
+    {
+      "timestamp": 6.9,
+      "gesture": "None",
+      "score": 0,
+      "hands": 1,
+      "ambiguous": false,
+      "source": "scripted",
+      "annotation": "release and cooldown",
+      "intended_action": null
+    },
+    {
+      "timestamp": 6.95,
+      "gesture": "None",
+      "score": 0,
+      "hands": 1,
+      "ambiguous": false,
+      "source": "scripted",
+      "annotation": "release and cooldown",
+      "intended_action": null
+    },
+    {
+      "timestamp": 7.0,
+      "gesture": "None",
+      "score": 0,
+      "hands": 1,
+      "ambiguous": false,
+      "source": "scripted",
+      "annotation": "release and cooldown",
+      "intended_action": null
+    },
+    {
+      "timestamp": 7.05,
+      "gesture": "None",
+      "score": 0,
+      "hands": 1,
+      "ambiguous": false,
+      "source": "scripted",
+      "annotation": "release and cooldown",
+      "intended_action": null
+    },
+    {
+      "timestamp": 7.1,
+      "gesture": "None",
+      "score": 0,
+      "hands": 1,
+      "ambiguous": false,
+      "source": "scripted",
+      "annotation": "release and cooldown",
+      "intended_action": null
+    },
+    {
+      "timestamp": 7.15,
+      "gesture": "Closed_Fist",
+      "score": 0.99,
+      "hands": 1,
+      "ambiguous": false,
+      "source": "scripted",
+      "annotation": "intentional pause request",
+      "intended_action": "pause"
+    },
+    {
+      "timestamp": 7.2,
+      "gesture": "Closed_Fist",
+      "score": 0.99,
+      "hands": 1,
+      "ambiguous": false,
+      "source": "scripted",
+      "annotation": "intentional pause request",
+      "intended_action": "pause"
+    },
+    {
+      "timestamp": 7.25,
+      "gesture": "Closed_Fist",
+      "score": 0.99,
+      "hands": 1,
+      "ambiguous": false,
+      "source": "scripted",
+      "annotation": "intentional pause request",
+      "intended_action": "pause"
+    },
+    {
+      "timestamp": 7.3,
+      "gesture": "Closed_Fist",
+      "score": 0.99,
+      "hands": 1,
+      "ambiguous": false,
+      "source": "scripted",
+      "annotation": "intentional pause request",
+      "intended_action": "pause"
+    },
+    {
+      "timestamp": 7.35,
+      "gesture": "Closed_Fist",
+      "score": 0.99,
+      "hands": 1,
+      "ambiguous": false,
+      "source": "scripted",
+      "annotation": "intentional pause request",
+      "intended_action": "pause"
+    },
+    {
+      "timestamp": 7.4,
+      "gesture": "Closed_Fist",
+      "score": 0.99,
+      "hands": 1,
+      "ambiguous": false,
+      "source": "scripted",
+      "annotation": "intentional pause request",
+      "intended_action": "pause"
+    },
+    {
+      "timestamp": 7.45,
+      "gesture": "Closed_Fist",
+      "score": 0.99,
+      "hands": 1,
+      "ambiguous": false,
+      "source": "scripted",
+      "annotation": "intentional pause request",
+      "intended_action": "pause"
+    },
+    {
+      "timestamp": 7.5,
+      "gesture": "Closed_Fist",
+      "score": 0.99,
+      "hands": 1,
+      "ambiguous": false,
+      "source": "scripted",
+      "annotation": "intentional pause request",
+      "intended_action": "pause"
+    },
+    {
+      "timestamp": 7.55,
+      "gesture": "Closed_Fist",
+      "score": 0.99,
+      "hands": 1,
+      "ambiguous": false,
+      "source": "scripted",
+      "annotation": "intentional pause request",
+      "intended_action": "pause"
+    },
+    {
+      "timestamp": 7.6,
+      "gesture": "Closed_Fist",
+      "score": 0.99,
+      "hands": 1,
+      "ambiguous": false,
+      "source": "scripted",
+      "annotation": "intentional pause request",
+      "intended_action": "pause"
+    },
+    {
+      "timestamp": 7.65,
+      "gesture": "Closed_Fist",
+      "score": 0.99,
+      "hands": 1,
+      "ambiguous": false,
+      "source": "scripted",
+      "annotation": "intentional pause request",
+      "intended_action": "pause"
+    },
+    {
+      "timestamp": 7.7,
+      "gesture": "Closed_Fist",
+      "score": 0.99,
+      "hands": 1,
+      "ambiguous": false,
+      "source": "scripted",
+      "annotation": "intentional pause request",
+      "intended_action": "pause"
+    },
+    {
+      "timestamp": 7.75,
+      "gesture": "Closed_Fist",
+      "score": 0.99,
+      "hands": 1,
+      "ambiguous": false,
+      "source": "scripted",
+      "annotation": "intentional pause request",
+      "intended_action": "pause"
+    },
+    {
+      "timestamp": 7.8,
+      "gesture": "Closed_Fist",
+      "score": 0.99,
+      "hands": 1,
+      "ambiguous": false,
+      "source": "scripted",
+      "annotation": "intentional pause request",
+      "intended_action": "pause"
+    },
+    {
+      "timestamp": 7.85,
+      "gesture": "Closed_Fist",
+      "score": 0.99,
+      "hands": 1,
+      "ambiguous": false,
+      "source": "scripted",
+      "annotation": "intentional pause request",
+      "intended_action": "pause"
+    },
+    {
+      "timestamp": 7.9,
+      "gesture": "Closed_Fist",
+      "score": 0.99,
+      "hands": 1,
+      "ambiguous": false,
+      "source": "scripted",
+      "annotation": "intentional pause request",
+      "intended_action": "pause"
+    },
+    {
+      "timestamp": 7.95,
+      "gesture": "Closed_Fist",
+      "score": 0.99,
+      "hands": 1,
+      "ambiguous": false,
+      "source": "scripted",
+      "annotation": "intentional pause request",
+      "intended_action": "pause"
+    },
+    {
+      "timestamp": 8.0,
+      "gesture": "Closed_Fist",
+      "score": 0.99,
+      "hands": 1,
+      "ambiguous": false,
+      "source": "scripted",
+      "annotation": "intentional pause request",
+      "intended_action": "pause"
+    },
+    {
+      "timestamp": 8.05,
+      "gesture": "None",
+      "score": 0,
+      "hands": 1,
+      "ambiguous": false,
+      "source": "scripted",
+      "annotation": "release",
+      "intended_action": null
+    },
+    {
+      "timestamp": 8.1,
+      "gesture": "None",
+      "score": 0,
+      "hands": 1,
+      "ambiguous": false,
+      "source": "scripted",
+      "annotation": "release",
+      "intended_action": null
+    },
+    {
+      "timestamp": 8.15,
+      "gesture": "None",
+      "score": 0,
+      "hands": 1,
+      "ambiguous": false,
+      "source": "scripted",
+      "annotation": "release",
+      "intended_action": null
+    },
+    {
+      "timestamp": 8.2,
+      "gesture": "None",
+      "score": 0,
+      "hands": 1,
+      "ambiguous": false,
+      "source": "scripted",
+      "annotation": "release",
+      "intended_action": null
+    },
+    {
+      "timestamp": 8.25,
+      "gesture": "None",
+      "score": 0,
+      "hands": 1,
+      "ambiguous": false,
+      "source": "scripted",
+      "annotation": "release",
+      "intended_action": null
+    },
+    {
+      "timestamp": 8.3,
+      "gesture": "None",
+      "score": 0,
+      "hands": 1,
+      "ambiguous": false,
+      "source": "scripted",
+      "annotation": "release",
+      "intended_action": null
+    },
+    {
+      "timestamp": 8.35,
+      "gesture": "Pinch",
+      "score": 0.99,
+      "hands": 1,
+      "ambiguous": false,
+      "source": "scripted",
+      "annotation": "intentional confirmation",
+      "intended_action": "pause"
+    },
+    {
+      "timestamp": 8.4,
+      "gesture": "Pinch",
+      "score": 0.99,
+      "hands": 1,
+      "ambiguous": false,
+      "source": "scripted",
+      "annotation": "intentional confirmation",
+      "intended_action": "pause"
+    },
+    {
+      "timestamp": 8.45,
+      "gesture": "Pinch",
+      "score": 0.99,
+      "hands": 1,
+      "ambiguous": false,
+      "source": "scripted",
+      "annotation": "intentional confirmation",
+      "intended_action": "pause"
+    },
+    {
+      "timestamp": 8.5,
+      "gesture": "Pinch",
+      "score": 0.99,
+      "hands": 1,
+      "ambiguous": false,
+      "source": "scripted",
+      "annotation": "intentional confirmation",
+      "intended_action": "pause"
+    },
+    {
+      "timestamp": 8.55,
+      "gesture": "Pinch",
+      "score": 0.99,
+      "hands": 1,
+      "ambiguous": false,
+      "source": "scripted",
+      "annotation": "intentional confirmation",
+      "intended_action": "pause"
+    },
+    {
+      "timestamp": 8.6,
+      "gesture": "Pinch",
+      "score": 0.99,
+      "hands": 1,
+      "ambiguous": false,
+      "source": "scripted",
+      "annotation": "intentional confirmation",
+      "intended_action": "pause"
+    },
+    {
+      "timestamp": 8.65,
+      "gesture": "Pinch",
+      "score": 0.99,
+      "hands": 1,
+      "ambiguous": false,
+      "source": "scripted",
+      "annotation": "intentional confirmation",
+      "intended_action": "pause"
+    },
+    {
+      "timestamp": 8.7,
+      "gesture": "Pinch",
+      "score": 0.99,
+      "hands": 1,
+      "ambiguous": false,
+      "source": "scripted",
+      "annotation": "intentional confirmation",
+      "intended_action": "pause"
+    },
+    {
+      "timestamp": 8.75,
+      "gesture": "Pinch",
+      "score": 0.99,
+      "hands": 1,
+      "ambiguous": false,
+      "source": "scripted",
+      "annotation": "intentional confirmation",
+      "intended_action": "pause"
+    },
+    {
+      "timestamp": 8.8,
+      "gesture": "Pinch",
+      "score": 0.99,
+      "hands": 1,
+      "ambiguous": false,
+      "source": "scripted",
+      "annotation": "intentional confirmation",
+      "intended_action": "pause"
+    },
+    {
+      "timestamp": 8.85,
+      "gesture": "Pinch",
+      "score": 0.99,
+      "hands": 1,
+      "ambiguous": false,
+      "source": "scripted",
+      "annotation": "intentional confirmation",
+      "intended_action": "pause"
+    },
+    {
+      "timestamp": 8.9,
+      "gesture": "Pinch",
+      "score": 0.99,
+      "hands": 1,
+      "ambiguous": false,
+      "source": "scripted",
+      "annotation": "intentional confirmation",
+      "intended_action": "pause"
+    },
+    {
+      "timestamp": 8.95,
+      "gesture": "Pinch",
+      "score": 0.99,
+      "hands": 1,
+      "ambiguous": false,
+      "source": "scripted",
+      "annotation": "intentional confirmation",
+      "intended_action": "pause"
+    },
+    {
+      "timestamp": 9.0,
+      "gesture": "Pinch",
+      "score": 0.99,
+      "hands": 1,
+      "ambiguous": false,
+      "source": "scripted",
+      "annotation": "intentional confirmation",
+      "intended_action": "pause"
+    },
+    {
+      "timestamp": 9.05,
+      "gesture": "Pinch",
+      "score": 0.99,
+      "hands": 1,
+      "ambiguous": false,
+      "source": "scripted",
+      "annotation": "intentional confirmation",
+      "intended_action": "pause"
+    },
+    {
+      "timestamp": 9.1,
+      "gesture": "None",
+      "score": 0,
+      "hands": 1,
+      "ambiguous": false,
+      "source": "scripted",
+      "annotation": "release and cooldown",
+      "intended_action": null
+    },
+    {
+      "timestamp": 9.15,
+      "gesture": "None",
+      "score": 0,
+      "hands": 1,
+      "ambiguous": false,
+      "source": "scripted",
+      "annotation": "release and cooldown",
+      "intended_action": null
+    },
+    {
+      "timestamp": 9.2,
+      "gesture": "None",
+      "score": 0,
+      "hands": 1,
+      "ambiguous": false,
+      "source": "scripted",
+      "annotation": "release and cooldown",
+      "intended_action": null
+    },
+    {
+      "timestamp": 9.25,
+      "gesture": "None",
+      "score": 0,
+      "hands": 1,
+      "ambiguous": false,
+      "source": "scripted",
+      "annotation": "release and cooldown",
+      "intended_action": null
+    },
+    {
+      "timestamp": 9.3,
+      "gesture": "None",
+      "score": 0,
+      "hands": 1,
+      "ambiguous": false,
+      "source": "scripted",
+      "annotation": "release and cooldown",
+      "intended_action": null
+    },
+    {
+      "timestamp": 9.35,
+      "gesture": "None",
+      "score": 0,
+      "hands": 1,
+      "ambiguous": false,
+      "source": "scripted",
+      "annotation": "release and cooldown",
+      "intended_action": null
+    },
+    {
+      "timestamp": 9.4,
+      "gesture": "None",
+      "score": 0,
+      "hands": 1,
+      "ambiguous": false,
+      "source": "scripted",
+      "annotation": "release and cooldown",
+      "intended_action": null
+    },
+    {
+      "timestamp": 9.45,
+      "gesture": "None",
+      "score": 0,
+      "hands": 1,
+      "ambiguous": false,
+      "source": "scripted",
+      "annotation": "release and cooldown",
+      "intended_action": null
+    },
+    {
+      "timestamp": 9.5,
+      "gesture": "None",
+      "score": 0,
+      "hands": 1,
+      "ambiguous": false,
+      "source": "scripted",
+      "annotation": "release and cooldown",
+      "intended_action": null
+    },
+    {
+      "timestamp": 9.55,
+      "gesture": "None",
+      "score": 0,
+      "hands": 1,
+      "ambiguous": false,
+      "source": "scripted",
+      "annotation": "release and cooldown",
+      "intended_action": null
+    },
+    {
+      "timestamp": 9.6,
+      "gesture": "None",
+      "score": 0,
+      "hands": 1,
+      "ambiguous": false,
+      "source": "scripted",
+      "annotation": "release and cooldown",
+      "intended_action": null
+    },
+    {
+      "timestamp": 9.65,
+      "gesture": "None",
+      "score": 0,
+      "hands": 1,
+      "ambiguous": false,
+      "source": "scripted",
+      "annotation": "release and cooldown",
+      "intended_action": null
+    },
+    {
+      "timestamp": 9.7,
+      "gesture": "None",
+      "score": 0,
+      "hands": 1,
+      "ambiguous": false,
+      "source": "scripted",
+      "annotation": "release and cooldown",
+      "intended_action": null
+    },
+    {
+      "timestamp": 9.75,
+      "gesture": "None",
+      "score": 0,
+      "hands": 1,
+      "ambiguous": false,
+      "source": "scripted",
+      "annotation": "release and cooldown",
+      "intended_action": null
+    },
+    {
+      "timestamp": 9.8,
+      "gesture": "None",
+      "score": 0,
+      "hands": 1,
+      "ambiguous": false,
+      "source": "scripted",
+      "annotation": "release and cooldown",
+      "intended_action": null
+    },
+    {
+      "timestamp": 9.85,
+      "gesture": "None",
+      "score": 0,
+      "hands": 1,
+      "ambiguous": false,
+      "source": "scripted",
+      "annotation": "release and cooldown",
+      "intended_action": null
+    },
+    {
+      "timestamp": 9.9,
+      "gesture": "None",
+      "score": 0,
+      "hands": 1,
+      "ambiguous": false,
+      "source": "scripted",
+      "annotation": "release and cooldown",
+      "intended_action": null
+    },
+    {
+      "timestamp": 9.95,
+      "gesture": "None",
+      "score": 0,
+      "hands": 1,
+      "ambiguous": false,
+      "source": "scripted",
+      "annotation": "release and cooldown",
+      "intended_action": null
+    },
+    {
+      "timestamp": 10.0,
+      "gesture": "None",
+      "score": 0,
+      "hands": 1,
+      "ambiguous": false,
+      "source": "scripted",
+      "annotation": "release and cooldown",
+      "intended_action": null
+    },
+    {
+      "timestamp": 10.05,
+      "gesture": "None",
+      "score": 0,
+      "hands": 1,
+      "ambiguous": false,
+      "source": "scripted",
+      "annotation": "release and cooldown",
+      "intended_action": null
+    },
+    {
+      "timestamp": 10.1,
+      "gesture": "None",
+      "score": 0,
+      "hands": 1,
+      "ambiguous": false,
+      "source": "scripted",
+      "annotation": "release and cooldown",
+      "intended_action": null
+    },
+    {
+      "timestamp": 10.15,
+      "gesture": "None",
+      "score": 0,
+      "hands": 1,
+      "ambiguous": false,
+      "source": "scripted",
+      "annotation": "release and cooldown",
+      "intended_action": null
+    },
+    {
+      "timestamp": 10.2,
+      "gesture": "Closed_Fist",
+      "score": 0.99,
+      "hands": 1,
+      "ambiguous": false,
+      "source": "scripted",
+      "annotation": "invalid pause of paused station",
+      "intended_action": null
+    },
+    {
+      "timestamp": 10.25,
+      "gesture": "Closed_Fist",
+      "score": 0.99,
+      "hands": 1,
+      "ambiguous": false,
+      "source": "scripted",
+      "annotation": "invalid pause of paused station",
+      "intended_action": null
+    },
+    {
+      "timestamp": 10.3,
+      "gesture": "Closed_Fist",
+      "score": 0.99,
+      "hands": 1,
+      "ambiguous": false,
+      "source": "scripted",
+      "annotation": "invalid pause of paused station",
+      "intended_action": null
+    },
+    {
+      "timestamp": 10.35,
+      "gesture": "Closed_Fist",
+      "score": 0.99,
+      "hands": 1,
+      "ambiguous": false,
+      "source": "scripted",
+      "annotation": "invalid pause of paused station",
+      "intended_action": null
+    },
+    {
+      "timestamp": 10.4,
+      "gesture": "Closed_Fist",
+      "score": 0.99,
+      "hands": 1,
+      "ambiguous": false,
+      "source": "scripted",
+      "annotation": "invalid pause of paused station",
+      "intended_action": null
+    },
+    {
+      "timestamp": 10.45,
+      "gesture": "Closed_Fist",
+      "score": 0.99,
+      "hands": 1,
+      "ambiguous": false,
+      "source": "scripted",
+      "annotation": "invalid pause of paused station",
+      "intended_action": null
+    },
+    {
+      "timestamp": 10.5,
+      "gesture": "Closed_Fist",
+      "score": 0.99,
+      "hands": 1,
+      "ambiguous": false,
+      "source": "scripted",
+      "annotation": "invalid pause of paused station",
+      "intended_action": null
+    },
+    {
+      "timestamp": 10.55,
+      "gesture": "Closed_Fist",
+      "score": 0.99,
+      "hands": 1,
+      "ambiguous": false,
+      "source": "scripted",
+      "annotation": "invalid pause of paused station",
+      "intended_action": null
+    },
+    {
+      "timestamp": 10.6,
+      "gesture": "Closed_Fist",
+      "score": 0.99,
+      "hands": 1,
+      "ambiguous": false,
+      "source": "scripted",
+      "annotation": "invalid pause of paused station",
+      "intended_action": null
+    },
+    {
+      "timestamp": 10.65,
+      "gesture": "Closed_Fist",
+      "score": 0.99,
+      "hands": 1,
+      "ambiguous": false,
+      "source": "scripted",
+      "annotation": "invalid pause of paused station",
+      "intended_action": null
+    },
+    {
+      "timestamp": 10.7,
+      "gesture": "Closed_Fist",
+      "score": 0.99,
+      "hands": 1,
+      "ambiguous": false,
+      "source": "scripted",
+      "annotation": "invalid pause of paused station",
+      "intended_action": null
+    },
+    {
+      "timestamp": 10.75,
+      "gesture": "Closed_Fist",
+      "score": 0.99,
+      "hands": 1,
+      "ambiguous": false,
+      "source": "scripted",
+      "annotation": "invalid pause of paused station",
+      "intended_action": null
+    },
+    {
+      "timestamp": 10.8,
+      "gesture": "Closed_Fist",
+      "score": 0.99,
+      "hands": 1,
+      "ambiguous": false,
+      "source": "scripted",
+      "annotation": "invalid pause of paused station",
+      "intended_action": null
+    },
+    {
+      "timestamp": 10.85,
+      "gesture": "Closed_Fist",
+      "score": 0.99,
+      "hands": 1,
+      "ambiguous": false,
+      "source": "scripted",
+      "annotation": "invalid pause of paused station",
+      "intended_action": null
+    },
+    {
+      "timestamp": 10.9,
+      "gesture": "Closed_Fist",
+      "score": 0.99,
+      "hands": 1,
+      "ambiguous": false,
+      "source": "scripted",
+      "annotation": "invalid pause of paused station",
+      "intended_action": null
+    },
+    {
+      "timestamp": 10.95,
+      "gesture": "Closed_Fist",
+      "score": 0.99,
+      "hands": 1,
+      "ambiguous": false,
+      "source": "scripted",
+      "annotation": "invalid pause of paused station",
+      "intended_action": null
+    },
+    {
+      "timestamp": 11.0,
+      "gesture": "Closed_Fist",
+      "score": 0.99,
+      "hands": 1,
+      "ambiguous": false,
+      "source": "scripted",
+      "annotation": "invalid pause of paused station",
+      "intended_action": null
+    },
+    {
+      "timestamp": 11.05,
+      "gesture": "Closed_Fist",
+      "score": 0.99,
+      "hands": 1,
+      "ambiguous": false,
+      "source": "scripted",
+      "annotation": "invalid pause of paused station",
+      "intended_action": null
+    },
+    {
+      "timestamp": 11.1,
+      "gesture": "None",
+      "score": 0,
+      "hands": 0,
+      "ambiguous": false,
+      "source": "scripted",
+      "annotation": "sustained hand loss",
+      "intended_action": null
+    },
+    {
+      "timestamp": 11.15,
+      "gesture": "None",
+      "score": 0,
+      "hands": 0,
+      "ambiguous": false,
+      "source": "scripted",
+      "annotation": "sustained hand loss",
+      "intended_action": null
+    },
+    {
+      "timestamp": 11.2,
+      "gesture": "None",
+      "score": 0,
+      "hands": 0,
+      "ambiguous": false,
+      "source": "scripted",
+      "annotation": "sustained hand loss",
+      "intended_action": null
+    },
+    {
+      "timestamp": 11.25,
+      "gesture": "None",
+      "score": 0,
+      "hands": 0,
+      "ambiguous": false,
+      "source": "scripted",
+      "annotation": "sustained hand loss",
+      "intended_action": null
+    },
+    {
+      "timestamp": 11.3,
+      "gesture": "None",
+      "score": 0,
+      "hands": 0,
+      "ambiguous": false,
+      "source": "scripted",
+      "annotation": "sustained hand loss",
+      "intended_action": null
+    },
+    {
+      "timestamp": 11.35,
+      "gesture": "None",
+      "score": 0,
+      "hands": 0,
+      "ambiguous": false,
+      "source": "scripted",
+      "annotation": "sustained hand loss",
+      "intended_action": null
+    },
+    {
+      "timestamp": 11.4,
+      "gesture": "None",
+      "score": 0,
+      "hands": 0,
+      "ambiguous": false,
+      "source": "scripted",
+      "annotation": "sustained hand loss",
+      "intended_action": null
+    },
+    {
+      "timestamp": 11.45,
+      "gesture": "None",
+      "score": 0,
+      "hands": 0,
+      "ambiguous": false,
+      "source": "scripted",
+      "annotation": "sustained hand loss",
+      "intended_action": null
+    },
+    {
+      "timestamp": 11.5,
+      "gesture": "None",
+      "score": 0,
+      "hands": 0,
+      "ambiguous": false,
+      "source": "scripted",
+      "annotation": "sustained hand loss",
+      "intended_action": null
+    },
+    {
+      "timestamp": 11.55,
+      "gesture": "None",
+      "score": 0,
+      "hands": 0,
+      "ambiguous": false,
+      "source": "scripted",
+      "annotation": "sustained hand loss",
+      "intended_action": null
+    },
+    {
+      "timestamp": 11.6,
+      "gesture": "None",
+      "score": 0,
+      "hands": 0,
+      "ambiguous": false,
+      "source": "scripted",
+      "annotation": "sustained hand loss",
+      "intended_action": null
+    },
+    {
+      "timestamp": 11.65,
+      "gesture": "None",
+      "score": 0,
+      "hands": 0,
+      "ambiguous": false,
+      "source": "scripted",
+      "annotation": "sustained hand loss",
+      "intended_action": null
+    },
+    {
+      "timestamp": 11.7,
+      "gesture": "None",
+      "score": 0,
+      "hands": 0,
+      "ambiguous": false,
+      "source": "scripted",
+      "annotation": "sustained hand loss",
+      "intended_action": null
+    },
+    {
+      "timestamp": 11.75,
+      "gesture": "None",
+      "score": 0,
+      "hands": 0,
+      "ambiguous": false,
+      "source": "scripted",
+      "annotation": "sustained hand loss",
+      "intended_action": null
+    },
+    {
+      "timestamp": 11.8,
+      "gesture": "None",
+      "score": 0,
+      "hands": 0,
+      "ambiguous": false,
+      "source": "scripted",
+      "annotation": "sustained hand loss",
+      "intended_action": null
+    },
+    {
+      "timestamp": 11.85,
+      "gesture": "None",
+      "score": 0,
+      "hands": 0,
+      "ambiguous": false,
+      "source": "scripted",
+      "annotation": "sustained hand loss",
+      "intended_action": null
+    },
+    {
+      "timestamp": 11.9,
+      "gesture": "None",
+      "score": 0,
+      "hands": 0,
+      "ambiguous": false,
+      "source": "scripted",
+      "annotation": "sustained hand loss",
+      "intended_action": null
+    },
+    {
+      "timestamp": 11.95,
+      "gesture": "None",
+      "score": 0,
+      "hands": 0,
+      "ambiguous": false,
+      "source": "scripted",
+      "annotation": "sustained hand loss",
+      "intended_action": null
+    },
+    {
+      "timestamp": 12.0,
+      "gesture": "None",
+      "score": 0,
+      "hands": 0,
+      "ambiguous": false,
+      "source": "scripted",
+      "annotation": "sustained hand loss",
+      "intended_action": null
+    },
+    {
+      "timestamp": 12.05,
+      "gesture": "None",
+      "score": 0,
+      "hands": 0,
+      "ambiguous": false,
+      "source": "scripted",
+      "annotation": "sustained hand loss",
+      "intended_action": null
+    },
+    {
+      "timestamp": 12.1,
+      "gesture": "None",
+      "score": 0,
+      "hands": 0,
+      "ambiguous": false,
+      "source": "scripted",
+      "annotation": "sustained hand loss",
+      "intended_action": null
+    },
+    {
+      "timestamp": 12.15,
+      "gesture": "None",
+      "score": 0,
+      "hands": 0,
+      "ambiguous": false,
+      "source": "scripted",
+      "annotation": "sustained hand loss",
+      "intended_action": null
+    },
+    {
+      "timestamp": 12.2,
+      "gesture": "None",
+      "score": 0,
+      "hands": 0,
+      "ambiguous": false,
+      "source": "scripted",
+      "annotation": "sustained hand loss",
+      "intended_action": null
+    },
+    {
+      "timestamp": 12.25,
+      "gesture": "None",
+      "score": 0,
+      "hands": 0,
+      "ambiguous": false,
+      "source": "scripted",
+      "annotation": "sustained hand loss",
+      "intended_action": null
+    },
+    {
+      "timestamp": 12.3,
+      "gesture": "None",
+      "score": 0,
+      "hands": 0,
+      "ambiguous": false,
+      "source": "scripted",
+      "annotation": "sustained hand loss",
+      "intended_action": null
+    },
+    {
+      "timestamp": 12.35,
+      "gesture": "None",
+      "score": 0,
+      "hands": 0,
+      "ambiguous": false,
+      "source": "scripted",
+      "annotation": "sustained hand loss",
+      "intended_action": null
+    },
+    {
+      "timestamp": 12.4,
+      "gesture": "None",
+      "score": 0,
+      "hands": 0,
+      "ambiguous": false,
+      "source": "scripted",
+      "annotation": "sustained hand loss",
+      "intended_action": null
+    },
+    {
+      "timestamp": 12.45,
+      "gesture": "None",
+      "score": 0,
+      "hands": 0,
+      "ambiguous": false,
+      "source": "scripted",
+      "annotation": "sustained hand loss",
+      "intended_action": null
+    },
+    {
+      "timestamp": 12.5,
+      "gesture": "None",
+      "score": 0,
+      "hands": 0,
+      "ambiguous": false,
+      "source": "scripted",
+      "annotation": "sustained hand loss",
+      "intended_action": null
+    },
+    {
+      "timestamp": 12.55,
+      "gesture": "None",
+      "score": 0,
+      "hands": 0,
+      "ambiguous": false,
+      "source": "scripted",
+      "annotation": "sustained hand loss",
+      "intended_action": null
+    },
+    {
+      "timestamp": 12.6,
+      "gesture": "None",
+      "score": 0,
+      "hands": 0,
+      "ambiguous": false,
+      "source": "scripted",
+      "annotation": "sustained hand loss",
+      "intended_action": null
+    },
+    {
+      "timestamp": 12.65,
+      "gesture": "None",
+      "score": 0,
+      "hands": 0,
+      "ambiguous": false,
+      "source": "scripted",
+      "annotation": "sustained hand loss",
+      "intended_action": null
+    },
+    {
+      "timestamp": 12.7,
+      "gesture": "None",
+      "score": 0,
+      "hands": 0,
+      "ambiguous": false,
+      "source": "scripted",
+      "annotation": "sustained hand loss",
+      "intended_action": null
+    },
+    {
+      "timestamp": 12.75,
+      "gesture": "None",
+      "score": 0,
+      "hands": 0,
+      "ambiguous": false,
+      "source": "scripted",
+      "annotation": "sustained hand loss",
+      "intended_action": null
+    },
+    {
+      "timestamp": 12.8,
+      "gesture": "None",
+      "score": 0,
+      "hands": 0,
+      "ambiguous": false,
+      "source": "scripted",
+      "annotation": "sustained hand loss",
+      "intended_action": null
+    },
+    {
+      "timestamp": 12.85,
+      "gesture": "None",
+      "score": 0,
+      "hands": 0,
+      "ambiguous": false,
+      "source": "scripted",
+      "annotation": "sustained hand loss",
+      "intended_action": null
+    },
+    {
+      "timestamp": 12.9,
+      "gesture": "None",
+      "score": 0,
+      "hands": 0,
+      "ambiguous": false,
+      "source": "scripted",
+      "annotation": "sustained hand loss",
+      "intended_action": null
+    },
+    {
+      "timestamp": 12.95,
+      "gesture": "None",
+      "score": 0,
+      "hands": 0,
+      "ambiguous": false,
+      "source": "scripted",
+      "annotation": "sustained hand loss",
+      "intended_action": null
+    },
+    {
+      "timestamp": 13.0,
+      "gesture": "None",
+      "score": 0,
+      "hands": 0,
+      "ambiguous": false,
+      "source": "scripted",
+      "annotation": "sustained hand loss",
+      "intended_action": null
+    },
+    {
+      "timestamp": 13.05,
+      "gesture": "None",
+      "score": 0,
+      "hands": 0,
+      "ambiguous": false,
+      "source": "scripted",
+      "annotation": "sustained hand loss",
+      "intended_action": null
+    },
+    {
+      "timestamp": 13.1,
+      "gesture": "None",
+      "score": 0,
+      "hands": 0,
+      "ambiguous": false,
+      "source": "scripted",
+      "annotation": "sustained hand loss",
+      "intended_action": null
+    },
+    {
+      "timestamp": 13.15,
+      "gesture": "None",
+      "score": 0,
+      "hands": 0,
+      "ambiguous": false,
+      "source": "scripted",
+      "annotation": "sustained hand loss",
+      "intended_action": null
+    },
+    {
+      "timestamp": 13.2,
+      "gesture": "None",
+      "score": 0,
+      "hands": 0,
+      "ambiguous": false,
+      "source": "scripted",
+      "annotation": "sustained hand loss",
+      "intended_action": null
+    },
+    {
+      "timestamp": 13.25,
+      "gesture": "None",
+      "score": 0,
+      "hands": 0,
+      "ambiguous": false,
+      "source": "scripted",
+      "annotation": "sustained hand loss",
+      "intended_action": null
+    },
+    {
+      "timestamp": 13.3,
+      "gesture": "None",
+      "score": 0,
+      "hands": 0,
+      "ambiguous": false,
+      "source": "scripted",
+      "annotation": "sustained hand loss",
+      "intended_action": null
+    },
+    {
+      "timestamp": 13.35,
+      "gesture": "None",
+      "score": 0,
+      "hands": 0,
+      "ambiguous": false,
+      "source": "scripted",
+      "annotation": "sustained hand loss",
+      "intended_action": null
+    },
+    {
+      "timestamp": 13.4,
+      "gesture": "None",
+      "score": 0,
+      "hands": 0,
+      "ambiguous": false,
+      "source": "scripted",
+      "annotation": "sustained hand loss",
+      "intended_action": null
+    },
+    {
+      "timestamp": 13.45,
+      "gesture": "None",
+      "score": 0,
+      "hands": 0,
+      "ambiguous": false,
+      "source": "scripted",
+      "annotation": "sustained hand loss",
+      "intended_action": null
+    },
+    {
+      "timestamp": 13.5,
+      "gesture": "None",
+      "score": 0,
+      "hands": 0,
+      "ambiguous": false,
+      "source": "scripted",
+      "annotation": "sustained hand loss",
+      "intended_action": null
+    },
+    {
+      "timestamp": 13.55,
+      "gesture": "None",
+      "score": 0,
+      "hands": 0,
+      "ambiguous": false,
+      "source": "scripted",
+      "annotation": "sustained hand loss",
+      "intended_action": null
+    },
+    {
+      "timestamp": 13.6,
+      "gesture": "None",
+      "score": 0,
+      "hands": 0,
+      "ambiguous": false,
+      "source": "scripted",
+      "annotation": "sustained hand loss",
+      "intended_action": null
+    },
+    {
+      "timestamp": 13.65,
+      "gesture": "None",
+      "score": 0,
+      "hands": 0,
+      "ambiguous": false,
+      "source": "scripted",
+      "annotation": "sustained hand loss",
+      "intended_action": null
+    },
+    {
+      "timestamp": 13.7,
+      "gesture": "None",
+      "score": 0,
+      "hands": 0,
+      "ambiguous": false,
+      "source": "scripted",
+      "annotation": "sustained hand loss",
+      "intended_action": null
+    },
+    {
+      "timestamp": 13.75,
+      "gesture": "None",
+      "score": 0,
+      "hands": 0,
+      "ambiguous": false,
+      "source": "scripted",
+      "annotation": "sustained hand loss",
+      "intended_action": null
+    },
+    {
+      "timestamp": 13.8,
+      "gesture": "None",
+      "score": 0,
+      "hands": 0,
+      "ambiguous": false,
+      "source": "scripted",
+      "annotation": "sustained hand loss",
+      "intended_action": null
+    },
+    {
+      "timestamp": 13.85,
+      "gesture": "None",
+      "score": 0,
+      "hands": 0,
+      "ambiguous": false,
+      "source": "scripted",
+      "annotation": "sustained hand loss",
+      "intended_action": null
+    },
+    {
+      "timestamp": 13.9,
+      "gesture": "None",
+      "score": 0,
+      "hands": 0,
+      "ambiguous": false,
+      "source": "scripted",
+      "annotation": "sustained hand loss",
+      "intended_action": null
+    },
+    {
+      "timestamp": 13.95,
+      "gesture": "None",
+      "score": 0,
+      "hands": 0,
+      "ambiguous": false,
+      "source": "scripted",
+      "annotation": "sustained hand loss",
+      "intended_action": null
+    },
+    {
+      "timestamp": 14.0,
+      "gesture": "None",
+      "score": 0,
+      "hands": 0,
+      "ambiguous": false,
+      "source": "scripted",
+      "annotation": "sustained hand loss",
+      "intended_action": null
+    },
+    {
+      "timestamp": 14.05,
+      "gesture": "None",
+      "score": 0,
+      "hands": 0,
+      "ambiguous": false,
+      "source": "scripted",
+      "annotation": "sustained hand loss",
+      "intended_action": null
+    },
+    {
+      "timestamp": 14.1,
+      "gesture": "None",
+      "score": 0,
+      "hands": 0,
+      "ambiguous": false,
+      "source": "scripted",
+      "annotation": "sustained hand loss",
+      "intended_action": null
+    },
+    {
+      "timestamp": 14.15,
+      "gesture": "None",
+      "score": 0,
+      "hands": 0,
+      "ambiguous": false,
+      "source": "scripted",
+      "annotation": "sustained hand loss",
+      "intended_action": null
+    },
+    {
+      "timestamp": 14.2,
+      "gesture": "None",
+      "score": 0,
+      "hands": 0,
+      "ambiguous": false,
+      "source": "scripted",
+      "annotation": "sustained hand loss",
+      "intended_action": null
+    },
+    {
+      "timestamp": 14.25,
+      "gesture": "None",
+      "score": 0,
+      "hands": 0,
+      "ambiguous": false,
+      "source": "scripted",
+      "annotation": "sustained hand loss",
+      "intended_action": null
+    },
+    {
+      "timestamp": 14.3,
+      "gesture": "None",
+      "score": 0,
+      "hands": 0,
+      "ambiguous": false,
+      "source": "scripted",
+      "annotation": "sustained hand loss",
+      "intended_action": null
+    },
+    {
+      "timestamp": 14.35,
+      "gesture": "None",
+      "score": 0,
+      "hands": 0,
+      "ambiguous": false,
+      "source": "scripted",
+      "annotation": "sustained hand loss",
+      "intended_action": null
+    },
+    {
+      "timestamp": 14.4,
+      "gesture": "None",
+      "score": 0,
+      "hands": 0,
+      "ambiguous": false,
+      "source": "scripted",
+      "annotation": "sustained hand loss",
+      "intended_action": null
+    },
+    {
+      "timestamp": 14.45,
+      "gesture": "None",
+      "score": 0,
+      "hands": 0,
+      "ambiguous": false,
+      "source": "scripted",
+      "annotation": "sustained hand loss",
+      "intended_action": null
+    },
+    {
+      "timestamp": 14.5,
+      "gesture": "None",
+      "score": 0,
+      "hands": 0,
+      "ambiguous": false,
+      "source": "scripted",
+      "annotation": "sustained hand loss",
+      "intended_action": null
+    },
+    {
+      "timestamp": 14.55,
+      "gesture": "None",
+      "score": 0,
+      "hands": 0,
+      "ambiguous": false,
+      "source": "scripted",
+      "annotation": "sustained hand loss",
+      "intended_action": null
+    }
+  ]
+}

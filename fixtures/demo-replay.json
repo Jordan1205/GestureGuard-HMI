@@ -1,0 +1,13 @@
+{
+  "kind": "scripted_observation_fixture_not_camera_recording",
+  "description": "Reproducible recorded observation stream for demonstration; not an actual human trial or video.",
+  "observations": [
+    {"gesture":"Thumb_Up","duration":1.0,"hands":1,"score":0.99},
+    {"gesture":"None","duration":0.5,"hands":1},
+    {"gesture":"ILoveYou","duration":1.5,"hands":1,"score":0.99},
+    {"gesture":"None","duration":0.5,"hands":1},
+    {"gesture":"Thumb_Up","duration":1.0,"hands":1,"score":0.99},
+    {"gesture":"Pinch","duration":0.8,"hands":1,"score":0.99},
+    {"gesture":"None","duration":4,"hands":0}
+  ]
+}
