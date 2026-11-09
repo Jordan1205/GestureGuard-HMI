@@ -5,7 +5,7 @@ import csv
 import io
 import json
 from pathlib import Path
-from typing import Literal
+from typing import Any, Literal
 
 from fastapi import FastAPI, HTTPException, Request, WebSocket, WebSocketDisconnect
 from fastapi.responses import HTMLResponse, Response
@@ -14,9 +14,10 @@ from pydantic import BaseModel, ConfigDict, Field
 from starlette.middleware.trustedhost import TrustedHostMiddleware
 
 from .evaluation import run_comparison, summarize
+from .recording import calibration_report
 from .runtime import ROOT, Runtime
 
-ALLOWED_ORIGINS = {f"http://{host}:{port}" for host in ("127.0.0.1","localhost") for port in (8765,5173)}
+ALLOWED_ORIGINS = {f"http://{host}:{port}" for host in ("127.0.0.1","localhost") for port in (8765,8766,5173)}
 
 
 class StrictModel(BaseModel):
@@ -68,6 +69,18 @@ class Annotation(StrictModel):
     gesture: str | None = None
 
 
+class RecordingStart(StrictModel):
+    consent: bool
+    label: Literal["ILoveYou","Open_Palm","Closed_Fist","Thumb_Up","Victory","Pointing_Up","Pinch","None","Negative"]
+    duration_seconds: float = Field(default=8,ge=3,le=60)
+    save_images: bool = False
+
+
+class CalibrationApply(StrictModel):
+    consent: bool
+    report_id: str
+
+
 def create_app(data_dir: Path | None = None):
     @asynccontextmanager
     async def lifespan(app):
@@ -112,6 +125,8 @@ def create_app(data_dir: Path | None = None):
     def control(payload: Control):
         run=runtime()
         with run._lock:
+            if run.recorder.active and payload.action not in {"stop","cancel","lock","reset"}:
+                raise ValueError("Commands are locked during local recording. Stop recording before controlling a station.")
             if payload.action=="speed":
                 if payload.value is None:
                     raise ValueError("Target speed is required.")
@@ -146,7 +161,7 @@ def create_app(data_dir: Path | None = None):
         return {"ok":True}
 
     @app.post("/api/settings")
-    def settings(payload: dict[str,float]):
+    def settings(payload: dict[str,Any]):
         runtime().update_settings(payload)
         return {"ok":True,"settings":runtime().settings.to_dict()}
 
@@ -159,6 +174,30 @@ def create_app(data_dir: Path | None = None):
     def session(payload: Session):
         runtime().new_session(payload.model_dump())
         return runtime().session
+
+    @app.get("/api/recording")
+    def recording_status():
+        run=runtime()
+        return run.recorder.snapshot(run.source=="live" and run.vision.snapshot()["status"]=="streaming")
+
+    @app.post("/api/recording/start")
+    def recording_start(payload: RecordingStart):
+        runtime().start_recording(payload.model_dump())
+        return {"ok":True,**recording_status()}
+
+    @app.post("/api/recording/stop")
+    def recording_stop():
+        runtime().stop_recording()
+        return {"ok":True,**recording_status()}
+
+    @app.get("/api/calibration")
+    def calibration():
+        return calibration_report(runtime().recorder.directory)
+
+    @app.post("/api/calibration/apply")
+    def calibration_apply(payload: CalibrationApply):
+        runtime().apply_calibration(payload.consent,payload.report_id)
+        return {"ok":True,"settings":runtime().settings.to_dict()}
 
     @app.get("/api/events")
     def events(request: Request):

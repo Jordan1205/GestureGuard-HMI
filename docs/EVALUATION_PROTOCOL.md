@@ -72,3 +72,8 @@ For two students and a small convenience sample, descriptive statistics and pair
 - Counterbalanced human task sessions complete with sample counts.
 - All modes compared with both deterministic architecture tests and separate human measurements.
 - Figures recomputed from exports, limitations stated, and no scripted result presented as real recognition performance.
+
+
+## Recognition usability follow-up
+
+Use the consented Gesture Studio recorder for independent labeled clips of each supported gesture, a neutral visible hand, and non-command movements. Collect across people or independent recording occasions and freeze Settings with the dataset. The optional tools in HUMAN_DATA_AND_TRAINING.md enforce group-disjoint splits instead of randomly splitting correlated frames. Pair the original hard-gate component and current temporal evidence on the same held-out clips, and report per-gesture precision/recall, confusion, unknown rejection, hold interruptions and time to accepted hold. Frame candidates are not executed commands. For successful factory tasks, false activations per idle minute and end-to-end command times, continue the annotated live task/idle protocol above; static clips cannot establish those measures. Local calibration-set agreement is not a held-out test result. Historical unlabeled scores are diagnostic only.

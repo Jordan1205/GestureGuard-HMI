@@ -39,3 +39,8 @@ Official reference paths:
 - [Vite guide](https://vite.dev/guide/)
 - [Tailwind Vite installation](https://tailwindcss.com/docs/installation/using-vite)
 - [Pytest assertions](https://docs.pytest.org/en/stable/how-to/assert.html)
+
+
+## Optional human-data experiments
+
+The optional training extra uses Scikit-learn (BSD-3-Clause; https://github.com/scikit-learn/scikit-learn) and is isolated in requirements-training.txt. It is not required for runtime and was not installed or used to train a human model for this revision. No MediaPipe Model Maker dependency was adopted. HaGRID's actual English license PDF is a custom adaptation and explicitly not a Creative Commons license; Jester has Qualcomm research-use terms. No dataset images or human recordings are redistributed. See HUMAN_DATA_AND_TRAINING.md for the inspected primary sources and label compatibility. No external application source was copied; the new filter, recorder and experiment integration are project code.

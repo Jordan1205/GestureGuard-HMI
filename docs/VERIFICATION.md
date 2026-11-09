@@ -1,3 +1,20 @@
+# Recognition usability verification — 7 November 2026
+
+This section supersedes the original implementation results retained below.
+
+- **137 backend tests passed**, one existing upstream Starlette/AnyIO deprecation warning. New coverage includes moderate-score consensus, score/category/Palm fluctuations, brief and sustained tracking loss, fresh final evidence, repeated-action suppression, both activation profiles, independent Pinch geometry, exact new-engine observation replay, consented recording/privacy, calibration negatives, group-disjoint offline learning and numeric model validation.
+- Strict TypeScript and the Vite production build passed. Latest reviewed build: `index-CKKwhL4r.js` / `index-CGYrHNxn.css`. No runtime dependency was added; Scikit-learn remains an uninstalled optional training extra.
+- `pip check` found no broken requirements. The offline evaluation CLI actually returned `no_human_recordings`, 0 labeled samples. No human custom model was trained or enabled.
+- Actual browser checks exercised Easy Demo Open Palm → release → command preview → separate Pinch → simulated station start, the new Studio diagnostics, unchecked recording/image/application consent, blocked recording without a live camera, honest empty calibration, camera recovery and responsive layout. Source-specific raw-score labels and pinch distance units were inspected. Mobile width remained within390px.
+- The webcam was probed again through the real OpenCV/MediaPipe service and could not open. This does not demonstrate live recognition improvement on the user's camera. The older user instance at8765 was left running; QA used a separate loopback instance at8766.
+- Historical live audit observations were inspected without publishing raw logs or identifiers: 384 predicted Thumb Up observations had median score0.672 and68.8% below0.70. These unlabeled correlated outputs support the old hard-gate diagnosis, not accuracy, intended-command success or a calibrated threshold claim. See RECOGNITION_USABILITY.md.
+- Focused screenshot review accepted all three listed fixes: functional type size, source-honest raw values and camera-unavailable recovery instructions. The inherited Geist/canvas-grid detector advisories were retained to preserve the established interface.
+- New screenshots: `recognition-control-center-1366.png`, `recognition-studio-1366.png`, `recognition-unavailable-1366.png`, `recognition-studio-mobile-390.png`. They show actual application outputs; injected observations remain explicitly labeled. Original screenshots below remain historical artifacts.
+
+Remaining: restart the original backend to load this code; collect consented labeled clips/negative movements across independent sessions or people, validate provisional filter settings on the actual webcam, run held-out paired classification/interaction evaluation, then consider whether the optional custom classifier improves measured performance. No real-world success-rate or before/after accuracy claim is made.
+
+---
+
 # Verification record — 6 November 2026
 
 ## Automated checks actually run

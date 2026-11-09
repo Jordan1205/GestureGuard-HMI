@@ -2,6 +2,7 @@
 from __future__ import annotations
 
 from collections import deque
+from copy import deepcopy
 from pathlib import Path
 from threading import Event, Lock, Thread
 import time
@@ -22,10 +23,12 @@ class VisionService:
         self._observation = None
         self._landmarks = []
         self._jpeg: bytes | None = None
+        self._recording_frame = None
         self._status = "idle"
         self._error: str | None = None
         self._fps = 0.0
         self._recognition_ms = 0.0
+        self._aspect = 4/3
 
     def start(self):
         if any(t.is_alive() for t in self._threads):
@@ -49,6 +52,7 @@ class VisionService:
         with self._lock:
             self._status = "idle"
             self._observation = self._jpeg = None
+            self._recording_frame = None
             self._landmarks = []
             self._fps = 0
 
@@ -56,6 +60,8 @@ class VisionService:
         with self._lock:
             self._status, self._error = "unavailable", message
             self._observation = self._jpeg = None
+            self._recording_frame = None
+            self._landmarks = []
         self._stop.set()
 
     def _capture(self):
@@ -132,6 +138,8 @@ class VisionService:
                     if self._stop.is_set():
                         break
                     self._observation, self._landmarks = observation, landmarks
+                    self._recording_frame = frame
+                    self._aspect = frame.shape[1]/frame.shape[0]
                     self._jpeg = encoded.tobytes() if ok else None
                     self._status, self._error = "streaming", None
                     self._fps, self._recognition_ms = fps, elapsed_ms
@@ -146,6 +154,37 @@ class VisionService:
         with self._lock:
             return self._observation
 
+    def recording_sample(self, include_images: bool = False):
+        """Return one fresh real inference artifact to an explicitly active recorder.
+
+        It is not written to audit events. JPEG persistence remains opt-in at the
+        recording service; normal camera operation stores no images on disk.
+        """
+        with self._lock:
+            observation = self._observation
+            if self._status != "streaming" or observation is None or time.monotonic()-observation.timestamp>.5:
+                return None
+            metadata = observation.metadata
+            raw_gesture=metadata.get("raw_canned_gesture",observation.gesture)
+            raw_score=metadata.get("raw_canned_score",observation.score)
+            frame=self._recording_frame if include_images else None
+            sample={"captured_at":observation.timestamp,"gesture":observation.gesture,"score":observation.score,
+                    "raw_gesture":raw_gesture,"raw_score":raw_score,
+                    "raw_canned_gesture":raw_gesture,"raw_canned_score":raw_score,
+                    "hands":observation.hands,"ambiguous":observation.ambiguous,
+                    "landmarks":deepcopy(self._landmarks[0]) if len(self._landmarks)==1 else [],
+                    "recognition_ms":observation.recognition_ms,"hand_scale":observation.hand_scale,
+                    "pinch_ratio":metadata.get("pinch_ratio"),"pinch_eligible":metadata.get("pinch_eligible",False),
+                    "score_kind":metadata.get("score_kind","classifier_output"),"aspect":self._aspect}
+        if frame is not None:
+            # Encode the exact original inference frame on the recorder worker,
+            # never the UI JPEG's landmark/text overlay or a newer capture frame.
+            import cv2
+            ok, encoded=cv2.imencode(".jpg",frame,[cv2.IMWRITE_JPEG_QUALITY,90])
+            if ok:
+                sample["jpeg"]=encoded.tobytes()
+        return sample
+
     def jpeg(self):
         with self._lock:
             return self._jpeg
@@ -153,8 +192,11 @@ class VisionService:
     def snapshot(self):
         with self._lock:
             age = (time.monotonic()-self._frame_time)*1000 if self._frame_time else None
+            inference_age = (time.monotonic()-self._observation.timestamp)*1000 if self._observation else None
+            fresh = inference_age is not None and inference_age <= self.settings.max_observation_gap_seconds*1000
             return {"status": self._status, "source": "live", "fps": round(self._fps,1),
                     "recognition_ms": round(self._recognition_ms,2), "frame_age_ms": age,
-                    "hands": self._observation.hands if self._observation else 0,
-                    "landmarks": self._landmarks, "error": self._error,
-                    "hand_scale": self._observation.hand_scale if self._observation else None}
+                    "inference_age_ms":inference_age,
+                    "hands": self._observation.hands if fresh else 0,
+                    "landmarks": self._landmarks if fresh else [], "error": self._error,
+                    "hand_scale": self._observation.hand_scale if fresh else None}

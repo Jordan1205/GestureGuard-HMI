@@ -19,3 +19,12 @@ coverage/
 .coverage
 .npm-cache/
 *.tsbuildinfo
+recordings/
+training-data/
+*.joblib
+*.pkl
+*.pickle
+*.npy
+*.npz
+*.mp4
+*.avi

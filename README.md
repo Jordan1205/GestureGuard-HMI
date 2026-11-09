@@ -6,17 +6,17 @@ A local-first Diploma in Computer Science FYP that separates **recognizing a han
 
 This application controls simulations only. It does not connect to machinery, industrial PLCs, mains electricity, or operating-system automation. “Simulated Stop” is a simulation control, not an emergency-stop safety system. The project makes no claim of certified safety, perfect recognition, or calibrated confidence probabilities.
 
-![GestureGuard HMI Control Center](screenshots/control-center-1366.png)
+![GestureGuard HMI Control Center](screenshots/recognition-control-center-1366.png)
 
 ## What the project demonstrates
 
 Ordinary gesture mapping can commit an unintended action as soon as a hand shape is recognized. GestureGuard adds an explicit interaction architecture:
 
-- A distinct held activation gesture and automatic locking.
-- Time-based gesture stability, neutral release, cooldown, and repeated-gesture suppression.
+- Easy Demo Open Palm activation, a configurable distinct activation alternative, and automatic locking.
+- Elapsed-time temporal consensus, category hysteresis, brief fluctuation tolerance, neutral release, cooldown, and repeated-gesture suppression.
 - Context-aware command permissions tied to a selected workstation.
 - A visible action preview and separate pinch/manual confirmation before start/pause.
-- Cancellation or rejection for lost tracking, ambiguity, multiple hands, timeout, changed context, and insufficient quality.
+- Brief instability pauses evidence; sustained loss/insufficient evidence, ambiguity, multiple hands, timeout, and changed context prevent commitment.
 - Structured SQLite audit events, observation replay, annotated evaluation metrics, and a reproducible three-mode comparison.
 
 MediaPipe supplies the pretrained model. **The original contribution is the Python command-intention architecture and its evaluation**, not a newly trained gesture classifier. See [architecture and contribution](docs/ARCHITECTURE.md).
@@ -70,15 +70,15 @@ For frontend development, run the same backend in one terminal and `npm run dev`
 
 1. Keep **GestureGuard** selected and reset the virtual factory. It starts stopped and LOCKED.
 2. Choose **Live Camera**, or keep **Simulated Test Input** for an honestly labeled architecture demonstration.
-3. Hold **ILoveYou** until unlock completes, then release to neutral.
+3. In **Easy Demo**, hold **Open Palm** until unlock completes, then relax/release. Gesture Studio also offers the distinct **ILoveYou** activation sign.
 4. Hold **Thumb Up**. Watch the candidate progress and start preview for the selected station.
 5. Make a separate **Pinch** to confirm, or use explicit manual Confirm. The station runs only after the backend commits.
 6. Release before repeating. Use **Open Palm** to cancel. Sustained hand absence locks the protected interface.
 
 | Gesture | Interaction |
 |---|---|
-| ILoveYou | Deliberate unlock |
-| Open Palm | Cancel / neutral |
+| ILoveYou | Configurable distinct activation alternative |
+| Open Palm | Deliberate unlock while locked in Easy Demo; short stable cancel / neutral when unlocked |
 | Closed Fist | Request pause |
 | Thumb Up | Request start |
 | Victory | Select next station |
@@ -98,6 +98,36 @@ Recorded metadata identifies `score_kind`: `classifier_output` for pretrained ge
 | GestureGuard | Protected behavior plus context validation, uncertainty rejection, explicit preview, separate confirmation, and explanatory audit |
 
 The factory's own state model prevents impossible operations in every mode. The comparison runs fresh engines with identical scripted observations and settings; its fixture/configuration hashes make the input reproducible. **Scripted comparison outcomes are not human recognition benchmarks.**
+
+
+## Recognition usability update
+
+GestureGuard now separates raw classification, geometric interpretation, supported temporal evidence, and authorized commands. The default classifier threshold remains **0.70**. Brief weak/unknown frames pause evidence instead of immediately resetting a hold and latching release. Consistent moderate scores can qualify through a longer hold and stronger time-window agreement; the raw scores are never raised or presented as calibrated probabilities. These filter defaults are provisional engineering settings, not fitted human results.
+
+Geometric Pinch uses its explicit normalized distance rule and an extended-index guard against curled fists. It is not gated by a classifier probability threshold. Multi-hand ambiguity still cancels immediately; sustained tracking loss cancels pending intent and later locks. Preview, separate confirmation, cooldown and release gating remain in Python.
+
+Open **Gesture Studio** for live preview, raw versus interpreted/filtered classification, candidate, threshold units, tracking, hold interruptions, and exact decision reasons. Lowering a threshold is not the first troubleshooting step.
+
+### Voluntary local recording and calibration
+
+1. Select a streaming **Live Camera**, set a pseudonymous operator/session and conditions, and open the recording panel.
+2. Choose a gesture, **Neutral hand position**, or **Negative non-command movements**. Record all labels over different orientations, backgrounds, distances and independent sessions.
+3. Explicitly consent for each short clip. Landmark recording is local; optional camera images are **off by default**. Commands are locked while collecting samples.
+4. Inspect the measured calibration report. Suggestions require repeated matching positives and visible-hand negative examples, remain provisional, and need a separate explicit Apply approval. Pinch geometry is reported separately.
+
+Files stay under ignored `data/recordings/`. Never publish participant images, landmarks, or trained personal-data artifacts. No recordings are created from simulated or replay input.
+
+Optional offline training is available through `scripts/train_classifier.py`; dependencies are isolated in `requirements-training.txt` and are not required to run the app. It requires group-disjoint human data, all labels and negatives. Models are numerical JSON, never executable pickle, and are **not automatically enabled for live control**. The paired evaluator reports per-gesture metrics/confusion and hold-component differences while leaving unavailable full-task/false-activation metrics empty.
+
+```powershell
+.\.venv\Scripts\python.exe scripts/evaluate_recordings.py
+# After collecting independent held-out human sessions, see the exact split/training commands:
+# docs/HUMAN_DATA_AND_TRAINING.md
+```
+
+There are currently **no labeled human training clips, no before/after human accuracy result, and no trained/deployed custom model**. Existing unlabeled live audit observations support the score-gating diagnosis but are not ground truth. HaGRID and Jester were researched; their licenses, size and incomplete label match are documented in [human-data and training notes](docs/HUMAN_DATA_AND_TRAINING.md). HaGRID's exact license is custom, not plain CC BY-SA. The original MediaPipe recognizer remains the selected model. See [recognition diagnosis](docs/RECOGNITION_USABILITY.md).
+
+![Recognition diagnostics and local recording](screenshots/recognition-studio-1366.png)
 
 ## Simulated workstations
 
@@ -185,7 +215,7 @@ Remaining academic work includes testing on the final webcam/laptop, freezing ca
 | Model unavailable | Run `scripts/download_model.py` with the virtual-environment Python; review download error and network access |
 | Camera unavailable or in use | Close other camera apps, check OS camera privacy permissions, then switch Live Camera again |
 | No stable recognition | Improve even lighting, show one hand fully, reduce motion, adjust holds/thresholds and image-space range |
-| Commands remain locked | Hold the distinct ILoveYou activation gesture, then release before issuing a command |
+| Commands remain locked | Hold Open Palm in Easy Demo (or the configured distinct sign), then release before issuing a command |
 | Preview expires | Release and make a separate pinch within the configured confirmation window |
 | Interface disconnected | Check backend terminal and local port 8765; reload after restart |
 | No evaluation accuracy | Collect valid expected/predicted trial labels; simulated observations alone cannot establish vision accuracy |

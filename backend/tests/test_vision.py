@@ -5,7 +5,7 @@ from types import SimpleNamespace
 import pytest
 
 from gestureguard.domain import Settings
-from gestureguard.gesture_recognition import interpret_result, pinch_geometry
+from gestureguard.gesture_recognition import interpret_result, pinch_eligible, pinch_geometry
 from gestureguard.vision import VisionService
 
 
@@ -65,7 +65,9 @@ def test_geometric_pinch_uses_explicit_quality_kind():
     observation, _ = interpret_result(result(points=hand(.2), gesture="None", score=.2), 10, 20, Settings())
     assert observation.gesture == "Pinch"
     assert observation.metadata["score_kind"] == "geometric_quality_index"
-    assert observation.score >= Settings().min_score
+    assert 0 <= observation.score <= 1
+    assert observation.metadata["pinch_eligible"] is True
+    assert observation.metadata["raw_canned_gesture"] == "None"
 
 
 def test_two_hand_geometry_does_not_override_ambiguity_with_pinch():
@@ -86,3 +88,27 @@ def test_missing_model_does_not_start_camera_threads(tmp_path):
     assert vision._threads == []
     assert vision.jpeg() is None
     vision.stop()
+
+
+def test_curled_fist_tip_overlap_is_not_misclassified_as_pinch():
+    points = hand(.1)
+    points[4] = [.49, .49, 0]
+    points[8] = [.50, .49, 0]
+    assert pinch_geometry(points)[0] < Settings().pinch_ratio
+    assert not pinch_eligible(points)
+    observation, _ = interpret_result(result(points=points, gesture="Closed_Fist", score=.93), 10, 20, Settings())
+    assert observation.gesture == "Closed_Fist"
+    assert observation.metadata["pinch_eligible"] is False
+    assert observation.metadata["raw_canned_score"] == .93
+
+
+def test_strong_fist_classification_is_not_overridden_even_with_projected_tip_overlap():
+    observation, _ = interpret_result(result(points=hand(.1), gesture="Closed_Fist", score=.93), 10, 20, Settings())
+    assert observation.gesture == "Closed_Fist"
+
+
+def test_nonfinite_geometry_is_rejected_without_fake_pinch():
+    points = hand(.2)
+    points[8][0] = float("nan")
+    assert pinch_geometry(points) == (float("inf"), 0)
+    assert not pinch_eligible(points)

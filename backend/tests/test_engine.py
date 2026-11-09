@@ -11,7 +11,9 @@ from gestureguard.simulation import Factory
 
 def make(mode="gestureguard"):
     factory, store = Factory(), EventStore()
-    return IntentEngine(factory, store, mode=mode)
+    # Preserve the original hard-gate reference tests. The improved causal path
+    # is exercised with densely timestamped streams in test_temporal_filter.py.
+    return IntentEngine(factory, store, settings=Settings(temporal_filter_enabled=False), mode=mode)
 
 
 def observe(engine, timestamp, gesture="None", hands=1, **kwargs):

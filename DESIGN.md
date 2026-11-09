@@ -277,3 +277,8 @@ The operation strip, timeline, audit views and evaluation values form supporting
 - **Don't** fabricate measured results, sample counts, calibrated confidence probabilities or completed actions.
 - **Don't** turn amber preview into a success treatment, or make color the sole state indicator.
 - **Don't** introduce promotional landing-page sequencing, decorative scroll animation, stock pictures or an unrelated visual direction.
+
+
+## Recognition Studio additions
+
+The recognition usability revision preserves the industrial palette, Geist type and existing navigation. The dashboard prioritizes the expected next action and observed evidence, while raw score details move into Studio. Studio pairs the real preview with causal diagnostics and explicit source-specific score wording; geometry distance limits are not classifier thresholds. Unavailable live input presents camera recovery before gesture prompts. New operational labels and consent/methodology copy retain an11px floor with responsive wrapping. Recording has a distinct active state, unchecked voluntary consent, separate optional image consent, actual progress/counters and a measured-data empty state. Calibration application requires an independent explicit approval; no sample counts or benchmark results are invented.

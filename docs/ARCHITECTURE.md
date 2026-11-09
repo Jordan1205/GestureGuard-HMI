@@ -36,8 +36,8 @@ The reference scale is palm width between landmarks 5 and 17 relative to image w
 
 | Input | Meaning |
 |---|---|
-| ILoveYou | Deliberate unlock, distinct from commands |
-| Open Palm | Cancel a pending action / neutralize interaction |
+| ILoveYou | Configurable distinct activation alternative |
+| Open Palm | Easy Demo held unlock while locked; short stable cancellation/neutral after unlock |
 | Thumb Up | Request start of the selected simulated station |
 | Closed Fist | Request pause |
 | Victory | Select the next workstation |
@@ -51,7 +51,7 @@ The implemented transition table in `intent_engine.py` is authoritative and unit
 
 | State | Meaning | Typical exit |
 |---|---|---|
-| LOCKED | Command gestures cannot activate a protected station | Stable ILoveYou → READY |
+| LOCKED | Command gestures cannot activate a protected station | Held configured activation → READY |
 | READY | Awaiting a new deliberate gesture | Command candidate → GESTURE_CANDIDATE |
 | GESTURE_CANDIDATE | Measuring a continuous hold | Stable and permitted → ACTION_PREVIEW |
 | ACTION_PREVIEW | Proposed command and fixed target are visible | AWAITING_CONFIRMATION |
@@ -60,7 +60,7 @@ The implemented transition table in `intent_engine.py` is authoritative and unit
 | COOLDOWN | Repetition is blocked | Elapsed cooldown and neutral release → READY |
 | REJECTED | An actionable reason explains why no commit occurred | Release/recovery or locking |
 
-The UI may not visibly dwell in a transient state such as EXECUTING because the model update is fast; the audit preserves transitions. Context validation happens before preview and before commit. A selected-station change must invalidate an old pending action, never silently retarget it. Hand loss cancels pending intent; sustained absence returns the system to LOCKED. Manual controls are a labeled accessibility/testing path, and remain subject to backend rules for start/pause in GestureGuard mode. Simulated Stop is a direct, logged simulation-only control.
+The UI may not visibly dwell in a transient state such as EXECUTING because the model update is fast; the audit preserves transitions. Context validation happens before preview and before commit. A selected-station change must invalidate an old pending action, never silently retarget it. Brief tracking fluctuations pause evidence without committing. Sustained loss cancels pending intent; longer absence returns the system to LOCKED. Manual controls are a labeled accessibility/testing path, and remain subject to backend rules for start/pause in GestureGuard mode. Simulated Stop is a direct, logged simulation-only control.
 
 ## Comparable modes
 
@@ -84,3 +84,10 @@ By default the backend binds `127.0.0.1`. Camera previews and controls are local
 ## Two-student ownership
 
 Student A owns vision/recognition, calibration, fixture capture, and performance measurement. Student B owns intent engine/API, simulation, UI, and audit integration. Both review the state-machine tests and jointly run counterbalanced participant sessions. Keep changes small enough for the other student to explain in a viva. Read `EVALUATION_PROTOCOL.md` for the experiment and `DEMO_SCRIPT.md` for the presentation.
+
+
+## Recognition usability revision
+
+`temporal_filter.py` is causal and time-based: it retains a candidate through brief instability, counts only supported observed intervals, applies category-switch hysteresis and recent agreement, and requires a fresh matching final observation. The strong path uses the configured per-gesture/default threshold; a moderate path requires an extended supported hold and greater recent agreement. Sustained ambiguity or missing evidence cannot coast into a command. GestureGuard uses the revised filter; Baseline stays raw and Protected retains its simpler legacy hold/release behavior for comparison.
+
+Pinch is a geometry modality with its own distance limit; canned score, interpreted geometry index and temporal evidence have separate diagnostic fields. Curled-fist geometry is guarded. `recording.py` runs consented collection on a separate worker, locks command interaction while active, and only saves real live samples locally. Normal performance audit events no longer persist hand landmark arrays. `learning.py` supplies optional offline grouped experiments; no custom model replaces MediaPipe without real independent validation. See RECOGNITION_USABILITY.md and HUMAN_DATA_AND_TRAINING.md for the exact protocol and limitations.

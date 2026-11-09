@@ -12,6 +12,7 @@ from uuid import uuid4
 from .domain import GESTURES, Observation, Settings
 from .event_store import EventStore
 from .intent_engine import IntentEngine
+from .recording import RecordingService, calibration_report
 from .simulation import Factory
 from .vision import VisionService
 
@@ -32,7 +33,8 @@ def demonstration_steps(name: str, settings: Settings) -> list[dict]:
     hold, unlock, confirm = settings.hold_seconds+.25, settings.unlock_seconds+.25, settings.confirm_seconds+.25
     def step(gesture, duration, label, **kw):
         return {"gesture":gesture,"duration":duration,"label":label, "hands":1, **kw}
-    activation = [step("ILoveYou",unlock,"Hold activation gesture"),step("None",.45,"Release to neutral")]
+    activation_gesture = "Open_Palm" if settings.easy_demo else settings.activation_gesture
+    activation = [step(activation_gesture,unlock,"Hold activation gesture"),step("None",.45,"Release to neutral")]
     preview = [step("Thumb_Up",hold,"Request start — preview only")]
     confirmation = [step("Pinch",confirm,"Separate pinch confirms command"),step("None",settings.cooldown_seconds+.3,"Release and cooldown")]
     cases = {
@@ -80,6 +82,7 @@ class Runtime:
         self.factory = Factory()
         self.engine = IntentEngine(self.factory,self.store,self.settings,session_id=self.session["id"])
         self.vision = VisionService(ROOT/"models"/"gesture_recognizer.task",self.settings)
+        self.recorder = RecordingService(self.data_dir/"recordings")
         self.source = "simulated"
         self._input = None
         self._input_until = 0.0
@@ -102,6 +105,7 @@ class Runtime:
 
     def close(self):
         self._stop.set()
+        self.recorder.stop()
         if self._thread:
             self._thread.join(timeout=5)
         self.vision.stop()
@@ -125,6 +129,9 @@ class Runtime:
             self._stop.wait(.05)
 
     def _update(self, now):
+        if self.recorder.active:
+            self.engine.tick(now)
+            return
         observation = None
         if self._steps:
             while self._step_index < len(self._steps) and now-self._step_started >= self._steps[self._step_index]["duration"]:
@@ -151,7 +158,8 @@ class Runtime:
                     observation = Observation(now,source="live")
                 if now-self._last_perf >= 1 and self.vision.snapshot()["status"] == "streaming":
                     self._last_perf = now
-                    self._log("performance_sample","Measured live inference sample.",**self.vision.snapshot())
+                    performance={k:v for k,v in self.vision.snapshot().items() if k!="landmarks"}
+                    self._log("performance_sample","Measured live inference sample.",**performance)
             elif self.source == "simulated" and self._input and now < self._input_until:
                 observation = Observation(now,**self._input)
             else:
@@ -167,6 +175,7 @@ class Runtime:
         if source not in {"live","simulated","replay"}:
             raise ValueError("Source must be live, simulated, or replay.")
         with self._lock:
+            self.recorder.stop()
             if self.source == "live":
                 self.vision.stop()
             self.engine.lock("Input source changed; pending action canceled.")
@@ -251,6 +260,7 @@ class Runtime:
                 "original_source":row.get("source","scripted_fixture"),
                 "scripted":payload.get("kind","").startswith("scripted") or row.get("source","simulated")=="simulated"})
         with self._lock:
+            self.recorder.stop()
             if self.source=="live":
                 self.vision.stop()
             self.engine.lock("Recorded observation replay started.")
@@ -261,6 +271,8 @@ class Runtime:
             self._log("replay_started","Recorded observation replay. No camera recognition is being performed.",records=len(rows))
 
     def update_settings(self, values):
+        if self.recorder.active:
+            raise ValueError("Finish the local recording before changing recognition settings.")
         allowed={field.name for field in fields(Settings)}
         if set(values)-allowed:
             raise ValueError(f"Unknown settings: {', '.join(set(values)-allowed)}")
@@ -275,6 +287,7 @@ class Runtime:
 
     def new_session(self, conditions):
         with self._lock:
+            self.recorder.stop()
             self._steps,self._input=[],None
             self.engine.lock("New evaluation session; interface locked.")
             self.session={"id":str(uuid4()),**{key:str(conditions.get(key,self.session[key]))[:80]
@@ -282,6 +295,31 @@ class Runtime:
             self.store.session=self.session
             self.engine.session_id=self.session["id"]
             self._log("session_started","Evaluation session started.",configuration=self.settings.to_dict())
+
+    def start_recording(self, payload):
+        with self._lock:
+            if self.source!="live" or self.vision.snapshot()["status"]!="streaming":
+                raise ValueError("Local training requires a streaming Live Camera. Simulated and replay inputs cannot create human recordings.")
+            self.engine.lock("Local recording active; command interaction is locked.")
+            self._steps,self._input=[],None
+            self.recorder.start(**payload, session=dict(self.session),settings=self.settings.to_dict(),
+                                provider=lambda:self.vision.recording_sample(payload.get("save_images",False)))
+            self._log("recording_started","Opt-in local human recording started; commands locked.",label=payload["label"])
+
+    def stop_recording(self):
+        self.recorder.stop()
+        with self._lock:
+            self.engine.lock("Recording ended; interface locked. Release, then use the activation gesture.")
+
+    def apply_calibration(self, consent, report_id):
+        if consent is not True:
+            raise ValueError("Explicit approval is required to apply measured calibration suggestions.")
+        report=calibration_report(self.recorder.directory)
+        if report["report_id"]!=report_id or not report["can_apply"]:
+            raise ValueError("No eligible current calibration suggestions. Collect representative real positives and negatives first.")
+        thresholds={**self.settings.gesture_thresholds,**report["suggestions"]["gesture_thresholds"]}
+        self.update_settings({"gesture_thresholds":thresholds})
+        self._log("calibration_applied","Measured local calibration suggestions applied.",report_id=report_id)
 
     def snapshot(self):
         with self._lock:
@@ -295,6 +333,7 @@ class Runtime:
             timeline=self.store.query(limit=20,exclude_types=["input_observation","performance_sample","state_changed"])
             return {"engine":self.engine.snapshot(),"stations":self.factory.snapshot(),"events":timeline,
                     "vision":vision,"session":dict(self.session),
+                    "recording":self.recorder.snapshot(self.source=="live" and vision["status"]=="streaming"),
                     "scenario":{"running":bool(self._steps),"name":self._scenario_name,
                         "step":self._step_index+1 if step else 0,"total":len(self._steps),
                         "label":step["label"] if step else ""}}

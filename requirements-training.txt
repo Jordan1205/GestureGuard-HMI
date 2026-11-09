@@ -1,0 +1,2 @@
+# Optional offline experiments only; the live application does not need sklearn.
+scikit-learn==1.7.1

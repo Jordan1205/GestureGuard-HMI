@@ -65,7 +65,7 @@
     {
       "timestamp": 0.3,
       "gesture": "None",
-      "score": 0,
+      "score": 0.99,
       "hands": 1,
       "ambiguous": false,
       "source": "scripted",
@@ -75,7 +75,7 @@
     {
       "timestamp": 0.35,
       "gesture": "None",
-      "score": 0,
+      "score": 0.99,
       "hands": 1,
       "ambiguous": false,
       "source": "scripted",
@@ -85,7 +85,7 @@
     {
       "timestamp": 0.4,
       "gesture": "None",
-      "score": 0,
+      "score": 0.99,
       "hands": 1,
       "ambiguous": false,
       "source": "scripted",
@@ -95,7 +95,7 @@
     {
       "timestamp": 0.45,
       "gesture": "None",
-      "score": 0,
+      "score": 0.99,
       "hands": 1,
       "ambiguous": false,
       "source": "scripted",
@@ -105,7 +105,7 @@
     {
       "timestamp": 0.5,
       "gesture": "None",
-      "score": 0,
+      "score": 0.99,
       "hands": 1,
       "ambiguous": false,
       "source": "scripted",
@@ -115,7 +115,7 @@
     {
       "timestamp": 0.55,
       "gesture": "None",
-      "score": 0,
+      "score": 0.99,
       "hands": 1,
       "ambiguous": false,
       "source": "scripted",
@@ -125,7 +125,7 @@
     {
       "timestamp": 0.6,
       "gesture": "None",
-      "score": 0,
+      "score": 0.99,
       "hands": 1,
       "ambiguous": false,
       "source": "scripted",
@@ -135,7 +135,7 @@
     {
       "timestamp": 0.65,
       "gesture": "None",
-      "score": 0,
+      "score": 0.99,
       "hands": 1,
       "ambiguous": false,
       "source": "scripted",
@@ -445,7 +445,7 @@
     {
       "timestamp": 2.2,
       "gesture": "None",
-      "score": 0,
+      "score": 0.99,
       "hands": 1,
       "ambiguous": false,
       "source": "scripted",
@@ -455,7 +455,7 @@
     {
       "timestamp": 2.25,
       "gesture": "None",
-      "score": 0,
+      "score": 0.99,
       "hands": 1,
       "ambiguous": false,
       "source": "scripted",
@@ -465,7 +465,7 @@
     {
       "timestamp": 2.3,
       "gesture": "None",
-      "score": 0,
+      "score": 0.99,
       "hands": 1,
       "ambiguous": false,
       "source": "scripted",
@@ -475,7 +475,7 @@
     {
       "timestamp": 2.35,
       "gesture": "None",
-      "score": 0,
+      "score": 0.99,
       "hands": 1,
       "ambiguous": false,
       "source": "scripted",
@@ -485,7 +485,7 @@
     {
       "timestamp": 2.4,
       "gesture": "None",
-      "score": 0,
+      "score": 0.99,
       "hands": 1,
       "ambiguous": false,
       "source": "scripted",
@@ -495,7 +495,7 @@
     {
       "timestamp": 2.45,
       "gesture": "None",
-      "score": 0,
+      "score": 0.99,
       "hands": 1,
       "ambiguous": false,
       "source": "scripted",
@@ -505,7 +505,7 @@
     {
       "timestamp": 2.5,
       "gesture": "None",
-      "score": 0,
+      "score": 0.99,
       "hands": 1,
       "ambiguous": false,
       "source": "scripted",
@@ -515,7 +515,7 @@
     {
       "timestamp": 2.55,
       "gesture": "None",
-      "score": 0,
+      "score": 0.99,
       "hands": 1,
       "ambiguous": false,
       "source": "scripted",
@@ -525,7 +525,7 @@
     {
       "timestamp": 2.6,
       "gesture": "None",
-      "score": 0,
+      "score": 0.99,
       "hands": 1,
       "ambiguous": false,
       "source": "scripted",
@@ -535,7 +535,7 @@
     {
       "timestamp": 2.65,
       "gesture": "None",
-      "score": 0,
+      "score": 0.99,
       "hands": 1,
       "ambiguous": false,
       "source": "scripted",
@@ -725,7 +725,7 @@
     {
       "timestamp": 3.6,
       "gesture": "None",
-      "score": 0,
+      "score": 0.99,
       "hands": 1,
       "ambiguous": false,
       "source": "scripted",
@@ -735,7 +735,7 @@
     {
       "timestamp": 3.65,
       "gesture": "None",
-      "score": 0,
+      "score": 0.99,
       "hands": 1,
       "ambiguous": false,
       "source": "scripted",
@@ -745,7 +745,7 @@
     {
       "timestamp": 3.7,
       "gesture": "None",
-      "score": 0,
+      "score": 0.99,
       "hands": 1,
       "ambiguous": false,
       "source": "scripted",
@@ -755,7 +755,7 @@
     {
       "timestamp": 3.75,
       "gesture": "None",
-      "score": 0,
+      "score": 0.99,
       "hands": 1,
       "ambiguous": false,
       "source": "scripted",
@@ -765,7 +765,7 @@
     {
       "timestamp": 3.8,
       "gesture": "None",
-      "score": 0,
+      "score": 0.99,
       "hands": 1,
       "ambiguous": false,
       "source": "scripted",
@@ -775,7 +775,7 @@
     {
       "timestamp": 3.85,
       "gesture": "None",
-      "score": 0,
+      "score": 0.99,
       "hands": 1,
       "ambiguous": false,
       "source": "scripted",
@@ -785,7 +785,7 @@
     {
       "timestamp": 3.9,
       "gesture": "None",
-      "score": 0,
+      "score": 0.99,
       "hands": 1,
       "ambiguous": false,
       "source": "scripted",
@@ -795,7 +795,7 @@
     {
       "timestamp": 3.95,
       "gesture": "None",
-      "score": 0,
+      "score": 0.99,
       "hands": 1,
       "ambiguous": false,
       "source": "scripted",
@@ -805,7 +805,7 @@
     {
       "timestamp": 4.0,
       "gesture": "None",
-      "score": 0,
+      "score": 0.99,
       "hands": 1,
       "ambiguous": false,
       "source": "scripted",
@@ -815,7 +815,7 @@
     {
       "timestamp": 4.05,
       "gesture": "None",
-      "score": 0,
+      "score": 0.99,
       "hands": 1,
       "ambiguous": false,
       "source": "scripted",
@@ -1005,7 +1005,7 @@
     {
       "timestamp": 5.0,
       "gesture": "None",
-      "score": 0,
+      "score": 0.99,
       "hands": 1,
       "ambiguous": false,
       "source": "scripted",
@@ -1015,7 +1015,7 @@
     {
       "timestamp": 5.05,
       "gesture": "None",
-      "score": 0,
+      "score": 0.99,
       "hands": 1,
       "ambiguous": false,
       "source": "scripted",
@@ -1025,7 +1025,7 @@
     {
       "timestamp": 5.1,
       "gesture": "None",
-      "score": 0,
+      "score": 0.99,
       "hands": 1,
       "ambiguous": false,
       "source": "scripted",
@@ -1035,7 +1035,7 @@
     {
       "timestamp": 5.15,
       "gesture": "None",
-      "score": 0,
+      "score": 0.99,
       "hands": 1,
       "ambiguous": false,
       "source": "scripted",
@@ -1045,7 +1045,7 @@
     {
       "timestamp": 5.2,
       "gesture": "None",
-      "score": 0,
+      "score": 0.99,
       "hands": 1,
       "ambiguous": false,
       "source": "scripted",
@@ -1055,7 +1055,7 @@
     {
       "timestamp": 5.25,
       "gesture": "None",
-      "score": 0,
+      "score": 0.99,
       "hands": 1,
       "ambiguous": false,
       "source": "scripted",
@@ -1215,7 +1215,7 @@
     {
       "timestamp": 6.05,
       "gesture": "None",
-      "score": 0,
+      "score": 0.99,
       "hands": 1,
       "ambiguous": false,
       "source": "scripted",
@@ -1225,7 +1225,7 @@
     {
       "timestamp": 6.1,
       "gesture": "None",
-      "score": 0,
+      "score": 0.99,
       "hands": 1,
       "ambiguous": false,
       "source": "scripted",
@@ -1235,7 +1235,7 @@
     {
       "timestamp": 6.15,
       "gesture": "None",
-      "score": 0,
+      "score": 0.99,
       "hands": 1,
       "ambiguous": false,
       "source": "scripted",
@@ -1245,7 +1245,7 @@
     {
       "timestamp": 6.2,
       "gesture": "None",
-      "score": 0,
+      "score": 0.99,
       "hands": 1,
       "ambiguous": false,
       "source": "scripted",
@@ -1255,7 +1255,7 @@
     {
       "timestamp": 6.25,
       "gesture": "None",
-      "score": 0,
+      "score": 0.99,
       "hands": 1,
       "ambiguous": false,
       "source": "scripted",
@@ -1265,7 +1265,7 @@
     {
       "timestamp": 6.3,
       "gesture": "None",
-      "score": 0,
+      "score": 0.99,
       "hands": 1,
       "ambiguous": false,
       "source": "scripted",
@@ -1275,7 +1275,7 @@
     {
       "timestamp": 6.35,
       "gesture": "None",
-      "score": 0,
+      "score": 0.99,
       "hands": 1,
       "ambiguous": false,
       "source": "scripted",
@@ -1285,7 +1285,7 @@
     {
       "timestamp": 6.4,
       "gesture": "None",
-      "score": 0,
+      "score": 0.99,
       "hands": 1,
       "ambiguous": false,
       "source": "scripted",
@@ -1295,7 +1295,7 @@
     {
       "timestamp": 6.45,
       "gesture": "None",
-      "score": 0,
+      "score": 0.99,
       "hands": 1,
       "ambiguous": false,
       "source": "scripted",
@@ -1305,7 +1305,7 @@
     {
       "timestamp": 6.5,
       "gesture": "None",
-      "score": 0,
+      "score": 0.99,
       "hands": 1,
       "ambiguous": false,
       "source": "scripted",
@@ -1315,7 +1315,7 @@
     {
       "timestamp": 6.55,
       "gesture": "None",
-      "score": 0,
+      "score": 0.99,
       "hands": 1,
       "ambiguous": false,
       "source": "scripted",
@@ -1325,7 +1325,7 @@
     {
       "timestamp": 6.6,
       "gesture": "None",
-      "score": 0,
+      "score": 0.99,
       "hands": 1,
       "ambiguous": false,
       "source": "scripted",
@@ -1335,7 +1335,7 @@
     {
       "timestamp": 6.65,
       "gesture": "None",
-      "score": 0,
+      "score": 0.99,
       "hands": 1,
       "ambiguous": false,
       "source": "scripted",
@@ -1345,7 +1345,7 @@
     {
       "timestamp": 6.7,
       "gesture": "None",
-      "score": 0,
+      "score": 0.99,
       "hands": 1,
       "ambiguous": false,
       "source": "scripted",
@@ -1355,7 +1355,7 @@
     {
       "timestamp": 6.75,
       "gesture": "None",
-      "score": 0,
+      "score": 0.99,
       "hands": 1,
       "ambiguous": false,
       "source": "scripted",
@@ -1365,7 +1365,7 @@
     {
       "timestamp": 6.8,
       "gesture": "None",
-      "score": 0,
+      "score": 0.99,
       "hands": 1,
       "ambiguous": false,
       "source": "scripted",
@@ -1375,7 +1375,7 @@
     {
       "timestamp": 6.85,
       "gesture": "None",
-      "score": 0,
+      "score": 0.99,
       "hands": 1,
       "ambiguous": false,
       "source": "scripted",
@@ -1385,7 +1385,7 @@
     {
       "timestamp": 6.9,
       "gesture": "None",
-      "score": 0,
+      "score": 0.99,
       "hands": 1,
       "ambiguous": false,
       "source": "scripted",
@@ -1395,7 +1395,7 @@
     {
       "timestamp": 6.95,
       "gesture": "None",
-      "score": 0,
+      "score": 0.99,
       "hands": 1,
       "ambiguous": false,
       "source": "scripted",
@@ -1405,7 +1405,7 @@
     {
       "timestamp": 7.0,
       "gesture": "None",
-      "score": 0,
+      "score": 0.99,
       "hands": 1,
       "ambiguous": false,
       "source": "scripted",
@@ -1415,7 +1415,7 @@
     {
       "timestamp": 7.05,
       "gesture": "None",
-      "score": 0,
+      "score": 0.99,
       "hands": 1,
       "ambiguous": false,
       "source": "scripted",
@@ -1425,7 +1425,7 @@
     {
       "timestamp": 7.1,
       "gesture": "None",
-      "score": 0,
+      "score": 0.99,
       "hands": 1,
       "ambiguous": false,
       "source": "scripted",
@@ -1615,7 +1615,7 @@
     {
       "timestamp": 8.05,
       "gesture": "None",
-      "score": 0,
+      "score": 0.99,
       "hands": 1,
       "ambiguous": false,
       "source": "scripted",
@@ -1625,7 +1625,7 @@
     {
       "timestamp": 8.1,
       "gesture": "None",
-      "score": 0,
+      "score": 0.99,
       "hands": 1,
       "ambiguous": false,
       "source": "scripted",
@@ -1635,7 +1635,7 @@
     {
       "timestamp": 8.15,
       "gesture": "None",
-      "score": 0,
+      "score": 0.99,
       "hands": 1,
       "ambiguous": false,
       "source": "scripted",
@@ -1645,7 +1645,7 @@
     {
       "timestamp": 8.2,
       "gesture": "None",
-      "score": 0,
+      "score": 0.99,
       "hands": 1,
       "ambiguous": false,
       "source": "scripted",
@@ -1655,7 +1655,7 @@
     {
       "timestamp": 8.25,
       "gesture": "None",
-      "score": 0,
+      "score": 0.99,
       "hands": 1,
       "ambiguous": false,
       "source": "scripted",
@@ -1665,7 +1665,7 @@
     {
       "timestamp": 8.3,
       "gesture": "None",
-      "score": 0,
+      "score": 0.99,
       "hands": 1,
       "ambiguous": false,
       "source": "scripted",
@@ -1825,7 +1825,7 @@
     {
       "timestamp": 9.1,
       "gesture": "None",
-      "score": 0,
+      "score": 0.99,
       "hands": 1,
       "ambiguous": false,
       "source": "scripted",
@@ -1835,7 +1835,7 @@
     {
       "timestamp": 9.15,
       "gesture": "None",
-      "score": 0,
+      "score": 0.99,
       "hands": 1,
       "ambiguous": false,
       "source": "scripted",
@@ -1845,7 +1845,7 @@
     {
       "timestamp": 9.2,
       "gesture": "None",
-      "score": 0,
+      "score": 0.99,
       "hands": 1,
       "ambiguous": false,
       "source": "scripted",
@@ -1855,7 +1855,7 @@
     {
       "timestamp": 9.25,
       "gesture": "None",
-      "score": 0,
+      "score": 0.99,
       "hands": 1,
       "ambiguous": false,
       "source": "scripted",
@@ -1865,7 +1865,7 @@
     {
       "timestamp": 9.3,
       "gesture": "None",
-      "score": 0,
+      "score": 0.99,
       "hands": 1,
       "ambiguous": false,
       "source": "scripted",
@@ -1875,7 +1875,7 @@
     {
       "timestamp": 9.35,
       "gesture": "None",
-      "score": 0,
+      "score": 0.99,
       "hands": 1,
       "ambiguous": false,
       "source": "scripted",
@@ -1885,7 +1885,7 @@
     {
       "timestamp": 9.4,
       "gesture": "None",
-      "score": 0,
+      "score": 0.99,
       "hands": 1,
       "ambiguous": false,
       "source": "scripted",
@@ -1895,7 +1895,7 @@
     {
       "timestamp": 9.45,
       "gesture": "None",
-      "score": 0,
+      "score": 0.99,
       "hands": 1,
       "ambiguous": false,
       "source": "scripted",
@@ -1905,7 +1905,7 @@
     {
       "timestamp": 9.5,
       "gesture": "None",
-      "score": 0,
+      "score": 0.99,
       "hands": 1,
       "ambiguous": false,
       "source": "scripted",
@@ -1915,7 +1915,7 @@
     {
       "timestamp": 9.55,
       "gesture": "None",
-      "score": 0,
+      "score": 0.99,
       "hands": 1,
       "ambiguous": false,
       "source": "scripted",
@@ -1925,7 +1925,7 @@
     {
       "timestamp": 9.6,
       "gesture": "None",
-      "score": 0,
+      "score": 0.99,
       "hands": 1,
       "ambiguous": false,
       "source": "scripted",
@@ -1935,7 +1935,7 @@
     {
       "timestamp": 9.65,
       "gesture": "None",
-      "score": 0,
+      "score": 0.99,
       "hands": 1,
       "ambiguous": false,
       "source": "scripted",
@@ -1945,7 +1945,7 @@
     {
       "timestamp": 9.7,
       "gesture": "None",
-      "score": 0,
+      "score": 0.99,
       "hands": 1,
       "ambiguous": false,
       "source": "scripted",
@@ -1955,7 +1955,7 @@
     {
       "timestamp": 9.75,
       "gesture": "None",
-      "score": 0,
+      "score": 0.99,
       "hands": 1,
       "ambiguous": false,
       "source": "scripted",
@@ -1965,7 +1965,7 @@
     {
       "timestamp": 9.8,
       "gesture": "None",
-      "score": 0,
+      "score": 0.99,
       "hands": 1,
       "ambiguous": false,
       "source": "scripted",
@@ -1975,7 +1975,7 @@
     {
       "timestamp": 9.85,
       "gesture": "None",
-      "score": 0,
+      "score": 0.99,
       "hands": 1,
       "ambiguous": false,
       "source": "scripted",
@@ -1985,7 +1985,7 @@
     {
       "timestamp": 9.9,
       "gesture": "None",
-      "score": 0,
+      "score": 0.99,
       "hands": 1,
       "ambiguous": false,
       "source": "scripted",
@@ -1995,7 +1995,7 @@
     {
       "timestamp": 9.95,
       "gesture": "None",
-      "score": 0,
+      "score": 0.99,
       "hands": 1,
       "ambiguous": false,
       "source": "scripted",
@@ -2005,7 +2005,7 @@
     {
       "timestamp": 10.0,
       "gesture": "None",
-      "score": 0,
+      "score": 0.99,
       "hands": 1,
       "ambiguous": false,
       "source": "scripted",
@@ -2015,7 +2015,7 @@
     {
       "timestamp": 10.05,
       "gesture": "None",
-      "score": 0,
+      "score": 0.99,
       "hands": 1,
       "ambiguous": false,
       "source": "scripted",
@@ -2025,7 +2025,7 @@
     {
       "timestamp": 10.1,
       "gesture": "None",
-      "score": 0,
+      "score": 0.99,
       "hands": 1,
       "ambiguous": false,
       "source": "scripted",
@@ -2035,7 +2035,7 @@
     {
       "timestamp": 10.15,
       "gesture": "None",
-      "score": 0,
+      "score": 0.99,
       "hands": 1,
       "ambiguous": false,
       "source": "scripted",

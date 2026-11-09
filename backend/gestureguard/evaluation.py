@@ -167,7 +167,7 @@ def scripted_fixture() -> list[dict[str, Any]]:
         intended_action = confirmed_action if annotation.startswith("intentional") else None
         for _ in range(round(duration / .05)):
             result.append({"timestamp": round(timestamp, 3), "gesture": gesture,
-                           "score": .99 if gesture != "None" else 0, "hands": hands,
+                           "score": .99 if hands else 0, "hands": hands,
                            "ambiguous": ambiguous, "source": "scripted", "annotation": annotation,
                            "intended_action": intended_action})
             timestamp += .05
